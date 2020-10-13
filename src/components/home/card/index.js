@@ -10,9 +10,6 @@ const Card = ({ data }) => {
       <div>
         <span>{data.title}</span>
       </div>
-      <div>
-        <span>hoho</span>
-      </div>
     </Link>
   );
 };

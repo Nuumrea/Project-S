@@ -4,11 +4,12 @@ import React from "react";
 import "../App.css";
 
 // Components
+import Content from "../components/project/content/index"
 
 const Project = () => {
   return (
     <>
-      <span>Project</span>
+      <Content />
     </>
   );
 };

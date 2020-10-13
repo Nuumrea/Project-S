@@ -4,11 +4,12 @@ import React from "react";
 import "../App.css";
 
 // Components
+import Content from "../components/profile/content/index"
 
 const Profile = () => {
   return (
     <>
-      <span>profile</span>
+      <Content />
     </>
   );
 };
