@@ -1,0 +1,10 @@
+.card-wrapper {
+  width: 300px;
+  height: 300px;
+  margin: 1.5%;
+  border: 1px solid #36454f;
+  border-radius: 5%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #36454f;
+}

@@ -1,0 +1,6 @@
+.home-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 10% 0;
+}
