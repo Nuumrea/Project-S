@@ -1,0 +1,24 @@
+.home-button {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border: 1px solid #fbf7f5;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.home-button:hover {
+  background-color: #ffbdbd;
+  border: 1px solid #ffbdbd;
+  color: #36454f;
+}
+.home-button > div {
+  padding: 10px;
+}
+.home-button > div > span {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.home-button > div > img {
+  height: 16px;
+  width: 16px;
+}

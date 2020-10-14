@@ -1,36 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Containers
-import Home from "./containers/Home";
-import Profile from "./containers/Profile";
-import Contact from "./containers/Contact";
-import Project from "./containers/Project";
-
-import Header from "./components/globalComponents/header/index";
+// Components
+import Home from "./components/home/content/index";
+import Profil from "./components/profil/content/index";
+import Project from "./components/project/content/index";
+import Contact from "./components/contact/content/index";
 import Footer from "./components/globalComponents/footer/index";
+
+// import Styling and Assets
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Router>
-        <Switch>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/project">
-            <Project />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-      <Footer />
+      <Home />
+      <Profil />
     </>
   );
 };

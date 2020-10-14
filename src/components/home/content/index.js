@@ -4,14 +4,24 @@ import React from "react";
 import "./index.css";
 
 // Components
-import Card from "../card/index";
+import Button from "../button/index";
 
-const Content = ({ dataCard }) => {
+const Content = () => {
   return (
-    <div className="home-content-wrapper">
-      {dataCard.map((data, index) => {
-        return <Card data={data} key={index} />;
-      })}
+    <div className="home-content">
+      <div>
+        <div>
+          <span>
+            Bonjour, je suis <span>Kévin Parayre</span>.
+          </span>
+        </div>
+        <div>
+          <span>Web développeur front-end.</span>
+        </div>
+      </div>
+      <div>
+        <Button />
+      </div>
     </div>
   );
 };

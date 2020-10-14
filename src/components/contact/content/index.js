@@ -4,12 +4,13 @@ import React from "react";
 import "./index.css";
 
 // Components
-import ArrowBack from "../../globalComponents/arrowBack/index"
 
 const Content = () => {
   return (
+      <div className="contact-content-wrapper">
       <div>
-        <ArrowBack />
+      contact
+      </div>
       </div>
   );
 };
