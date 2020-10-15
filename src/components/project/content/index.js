@@ -4,14 +4,15 @@ import React from "react";
 import "./index.css";
 
 // Components
+import Title from "../../globalComponents/title/index";
 
 const Content = () => {
+  let titleSection = "Project";
+
   return (
-      <div className="project-content-wrapper">
-      <span>
-      project
-      </span>
-      </div>
+    <div className="project-wrapper">
+      <Title title={titleSection} />
+    </div>
   );
 };
 

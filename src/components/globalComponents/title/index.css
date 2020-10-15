@@ -1,0 +1,9 @@
+.profil-title {
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+.profil-title > span {
+  font-size: 1.8rem;
+  color: #36454f;
+  border-bottom: 2px solid #36454f;
+}

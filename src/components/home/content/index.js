@@ -8,7 +8,7 @@ import Button from "../button/index";
 
 const Content = () => {
   return (
-    <div className="home-content">
+    <div className="home-wrapper">
       <div>
         <div>
           <span>

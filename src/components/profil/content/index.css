@@ -1,40 +1,26 @@
 .profil-wrapper {
-  margin: 5% 15% 0 15%;
+  margin: 0 15% 0 15%;
   height: 100vh;
-}
-/* TITLE */
-.profil-title {
-  text-align: center;
-  margin: 0 0 5% 0;
-}
-.profil-title > span {
-  font-size: 1.8rem;
-  color: #36454f;
-  border-bottom: 2px solid #36454f;
 }
 /* CONTENT */
 .profil-content {
   display: flex;
+}
+.profil-content-block1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profil-content-block1 > div {
+}
+.profil-content-block1 > div > p {
+  font-size: 1rem;
+  color: #36454f;
+}
+.profil-content-block2 {
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 5% 0;
-}
-.profil-content-img {
-  margin: 0 5% 0 0;
-}
-.profil-content-description {
-}
-.profil-content-description > p {
-  font-size: 1rem;
-  color: #36454f;
-}
-/* DL */
-.profil-content-dl > a {
-  text-decoration: none;
-  border: 1px solid #fbf7f5;
-  font-size: 1rem;
-  color: #36454f;
-}
-.profil-content-dl > a:hover {
-  border-bottom: 1px solid #36454f;
 }

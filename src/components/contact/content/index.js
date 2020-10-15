@@ -4,15 +4,16 @@ import React from "react";
 import "./index.css";
 
 // Components
+import Title from "../../globalComponents/title/index";
 
-const Content = () => {
+const Contact = () => {
+  let titleSection = "Contact";
+
   return (
-      <div className="contact-content-wrapper">
-      <div>
-      contact
-      </div>
-      </div>
+    <div className="contact-wrapper">
+      <Title title={titleSection} />
+    </div>
   );
 };
 
-export default Content;
+export default Contact;

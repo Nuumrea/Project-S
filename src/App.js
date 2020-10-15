@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import Home from "./components/home/content/index";
+import Header from "./components/globalComponents/header/index";
 import Profil from "./components/profil/content/index";
 import Project from "./components/project/content/index";
 import Contact from "./components/contact/content/index";
@@ -14,7 +15,11 @@ const App = () => {
   return (
     <>
       <Home />
+      <Header />
       <Profil />
+      <Project />
+      <Contact />
+      <Footer />
     </>
   );
 };
