@@ -3,11 +3,10 @@
   top: 0;
   display: flex;
   align-items: center;
-  width: 100%;
   height: 50px;
   background-color: #36454f;
   border-bottom: solid 2px #ffbdbd;
-  padding: 0 15% 0 15%;
+  padding: 0 10% 0 10%;
   margin: 0 0 5% 0;
 }
 .header-wrapper > div {
