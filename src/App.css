@@ -3,10 +3,18 @@
   margin: 0;
   padding: 0;
 }
-
 /* Global Rules */
 body {
   background-color: #fbf7f5;
   font-family: Bahnschrift;
+  color: #fbf7f5;
+}
+.blue {
+  color: #36454f;
+}
+.pink {
+  color: #ffbdbd;
+}
+.white {
   color: #fbf7f5;
 }

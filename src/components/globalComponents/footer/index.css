@@ -1,6 +1,19 @@
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
-  text-align: start;
-  border-top: 1px solid #36454f;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ffbdbd;
+  background-color: #36454f;
+}
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer-text {
+  margin: 0 0 3% 0;
+}
+.footer-text > span > span {
+  color: #ffbdbd;
 }

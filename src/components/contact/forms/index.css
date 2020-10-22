@@ -1,0 +1,50 @@
+.forms-wrapper {
+  min-width: 50%;
+  height: auto;
+  margin: 0 0 10% 0;
+}
+.forms-wrapper > div {
+  margin: 0 0 2% 0;
+}
+.forms-wrapper > div > input {
+  width: 100%;
+  padding: 1% 1%;
+  outline: none;
+  color: #36454f;
+  font-family: Bahnschrift;
+  border: 1px solid #ffbdbd;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.forms-wrapper > div > textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1% 1%;
+  outline: none;
+  color: #36454f;
+  font-family: Bahnschrift;
+  border: 1px solid #ffbdbd;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.form-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-submit > div > input {
+  width: 120px;
+  height: 44px;
+  outline: none;
+  cursor: pointer;
+  font-family: Bahnschrift;
+  color: #fbf7f5;
+  background-color: #36454f;
+  border: 1px solid #fbf7f5;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+}
+.form-submit > div > input:hover {
+  background-color: #ffbdbd;
+  color: #36454f;
+  border: none;
+}

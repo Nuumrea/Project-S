@@ -4,14 +4,18 @@ import React from "react";
 import "./index.css";
 
 // Components
-import Title from "../../globalComponents/title/index";
+import Forms from "../forms/index";
 
 const Contact = () => {
-  let titleSection = "Contact";
-
   return (
     <div className="contact-wrapper">
-      <Title title={titleSection} />
+      <div className="contact-title">
+        <span>Contact</span>
+      </div>
+      <div className="contact-question white">
+        <span>Une question ou envie de travailler avec moi ?</span>
+      </div>
+      <Forms />
     </div>
   );
 };
