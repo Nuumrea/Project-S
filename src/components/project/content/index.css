@@ -1,5 +1,9 @@
 .project-wrapper {
-  margin: 0 0 5% 0;
-  height: 100vh;
-  background-color: #36454f;
+  margin: 0 10% 5% 10%;
+  height: auto;
+}
+.project-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

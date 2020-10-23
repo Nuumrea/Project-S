@@ -8,7 +8,7 @@ import Forms from "../forms/index";
 
 const Contact = () => {
   return (
-    <div className="contact-wrapper">
+    <section id="contact" className="contact-wrapper">
       <div className="contact-title">
         <span>Contact</span>
       </div>
@@ -16,7 +16,7 @@ const Contact = () => {
         <span>Une question ou envie de travailler avec moi ?</span>
       </div>
       <Forms />
-    </div>
+    </section>
   );
 };
 

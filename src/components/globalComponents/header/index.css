@@ -8,6 +8,7 @@
   border-bottom: solid 2px #ffbdbd;
   padding: 0 10% 0 10%;
   margin: 0 0 5% 0;
+  z-index: 1;
 }
 .header-wrapper > div {
   margin: 0 2% 0 2%;

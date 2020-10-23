@@ -8,7 +8,7 @@ import Button from "../button/index";
 
 const Content = () => {
   return (
-    <div className="home-wrapper">
+    <section id="home" className="home-wrapper">
       <div>
         <div>
           <span>
@@ -22,7 +22,7 @@ const Content = () => {
       <div>
         <Button />
       </div>
-    </div>
+    </section>
   );
 };
 

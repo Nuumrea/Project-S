@@ -63,7 +63,7 @@ const Content = () => {
   ];
 
   return (
-    <div className="profil-wrapper">
+    <section id="profil" className="profil-wrapper">
       <Title title={titleSection} />
       <div className="nindo-content">
         {dataNindo.map((data, index) => {
@@ -99,7 +99,7 @@ const Content = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

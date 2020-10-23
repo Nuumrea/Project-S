@@ -20,6 +20,11 @@ const Button = () => {
       onMouseLeave={() => {
         setIsButtonHover(true);
       }}
+      onClick={() => {
+        document
+          .getElementById("profil")
+          .scrollIntoView({ behavior: "smooth" });
+      }}
     >
       <div>
         <span>Voir mon profil</span>
