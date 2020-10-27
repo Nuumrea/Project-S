@@ -2,27 +2,31 @@ import React from "react";
 
 // Styling
 import "./index.css";
-import LeKaba from "../../../assets/card/lekabaHome.png";
 
 // Components
 
-const Card = () => {
+const Card = ({ data }) => {
   return (
     <div className="card-container">
-      <img className="card-img" src={LeKaba} alt="background" />
+      <img className="card-img" src={data.pic} alt="background" />
       <div className="card-text">
         <div>
           <div className="card-title blue">
-            <span>Lekaba</span>
+            <span>{data.title}</span>
           </div>
           <div className="card-spec blue">
-            <span>React JS</span>
+            <span>{data.spec}</span>
           </div>
         </div>
         <div>
-          <a className="card-link" href="https://www.lekaba.fr/">
-            <span>Vers le site</span>
-          </a>
+          <div
+            className="card-link"
+            onClick={() => {
+              data.setState(true);
+            }}
+          >
+            <span>Voir plus</span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,100 @@
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-container {
+  width: 600px;
+  height: auto;
+  background-color: #fbf7f5;
+}
+.modal-img-container {
+  width: 100%;
+  height: 50%;
+}
+.modal-img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.modal-info-container {
+  width: 100%;
+}
+.modal-info-title {
+  line-height: 50px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ffbdbd;
+  margin: 0 5%;
+}
+.modal-info-description {
+  height: 100px;
+  font-size: 1rem;
+  margin: 5% 5% 0 5%;
+}
+.modal-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5% 5% 5%;
+}
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 44px;
+  background-color: #36454f;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.5s ease-in-out;
+}
+.modal-button > a {
+  text-decoration: none;
+  color: #fbf7f5;
+}
+.modal-button:hover {
+  background-color: #ffbdbd;
+}
+.modal-button:hover > a {
+  color: #36454f;
+}
+.modal-close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.modal-close > img {
+  width: 100%;
+  height: 100%;
+}

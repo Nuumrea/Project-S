@@ -107,7 +107,7 @@ const Contact = () => {
           value={handleName}
           onChange={handleNameChange}
           ref={register({
-            required: "Required",
+            required: "Requis",
           })}
         />
         {errors.name && errors.name.message}
@@ -120,7 +120,7 @@ const Contact = () => {
           value={handleEmail}
           onChange={handleEmailChange}
           ref={register({
-            required: "Required",
+            required: "Requis",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: "invalid email address",
@@ -137,7 +137,7 @@ const Contact = () => {
           value={handleFeedback}
           onChange={handleFeedbackChange}
           ref={register({
-            required: "Required",
+            required: "Requis",
           })}
         ></textarea>
         {errors.textarea && errors.textarea.message}
