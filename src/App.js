@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Components
 import Home from "./components/home/content/index";
@@ -12,14 +12,37 @@ import Footer from "./components/globalComponents/footer/index";
 import "./App.css";
 
 const App = () => {
+  const [isHome, setIsHome] = useState(false);
+  const [isProfil, setIsProfil] = useState(false);
+  const [isProject, setIsProject] = useState(false);
+  const [isContact, setIsContact] = useState(false);
   return (
     <>
-      <Home />
-      <Header />
+      <Home
+        setIsProfil={setIsProfil}
+        setIsHome={setIsHome}
+        setIsProject={setIsProject}
+        setIsContact={setIsContact}
+      />
+      <Header
+        isHome={isHome}
+        setIsHome={setIsHome}
+        isProfil={isProfil}
+        setIsProfil={setIsProfil}
+        isProject={isProject}
+        setIsProject={setIsProject}
+        isContact={isContact}
+        setIsContact={setIsContact}
+      />
       <Profil />
       <Project />
       <Contact />
-      <Footer />
+      <Footer
+        setIsProfil={setIsProfil}
+        setIsHome={setIsHome}
+        setIsProject={setIsProject}
+        setIsContact={setIsContact}
+      />
     </>
   );
 };

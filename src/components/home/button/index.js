@@ -7,7 +7,7 @@ import ArrowDown from "../../../assets/png/arrowDown.png";
 
 // Components
 
-const Button = () => {
+const Button = ({ setIsProfil, setIsHome, setIsContact, setIsProject }) => {
   // State
   const [isButtonHover, setIsButtonHover] = useState(true);
 
@@ -24,6 +24,10 @@ const Button = () => {
         document
           .getElementById("profil")
           .scrollIntoView({ behavior: "smooth" });
+        setIsProfil(true);
+        setIsHome(false);
+        setIsContact(false);
+        setIsProject(false);
       }}
     >
       <div>

@@ -10,7 +10,7 @@ import Linkedin from "../../../assets/png/linkedin.png";
 import Instagram from "../../../assets/png/instagram.png";
 import Github from "../../../assets/png/github.png";
 
-const Footer = () => {
+const Footer = ({ setIsProfil, setIsHome, setIsProject, setIsContact }) => {
   const socialMedia = [
     {
       icon: Linkedin,
@@ -27,7 +27,12 @@ const Footer = () => {
   ];
   return (
     <footer className="footer-wrapper">
-      <ButtonToTop />
+      <ButtonToTop
+        setIsProfil={setIsProfil}
+        setIsHome={setIsHome}
+        setIsProject={setIsProject}
+        setIsContact={setIsContact}
+      />
       <div className="footer-icon-container">
         {socialMedia.map((data, index) => {
           return <SocialMedia data={data} key={index} />;

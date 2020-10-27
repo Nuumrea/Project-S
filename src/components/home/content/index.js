@@ -6,7 +6,7 @@ import "./index.css";
 // Components
 import Button from "../button/index";
 
-const Content = () => {
+const Content = ({ setIsProfil, setIsHome, setIsContact, setIsProject }) => {
   return (
     <section id="home" className="home-wrapper">
       <div>
@@ -20,7 +20,12 @@ const Content = () => {
         </div>
       </div>
       <div>
-        <Button />
+        <Button
+          setIsProfil={setIsProfil}
+          setIsHome={setIsHome}
+          setIsProject={setIsProject}
+          setIsContact={setIsContact}
+        />
       </div>
     </section>
   );
