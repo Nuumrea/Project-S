@@ -1,5 +1,5 @@
 .forms-wrapper {
-  min-width: 50%;
+  width: 80%;
   height: auto;
   margin: 0 0 10% 0;
   transition: 0.5s ease-in-out;
@@ -15,7 +15,7 @@
   font-family: Bahnschrift;
   border: 1px solid #ffbdbd;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .forms-wrapper > div > textarea {
   width: 100%;
@@ -26,15 +26,15 @@
   font-family: Bahnschrift;
   border: 1px solid #ffbdbd;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .form-submit {
   display: flex;
   justify-content: flex-end;
 }
 .form-submit > div > input {
-  width: 120px;
-  height: 44px;
+  width: 150px;
+  height: 35px;
   outline: none;
   cursor: pointer;
   font-family: Bahnschrift;
@@ -42,7 +42,7 @@
   background-color: #36454f;
   border: 1px solid #fbf7f5;
   transition: all 0.5s;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .form-submit > div > input:hover {
   background-color: #ffbdbd;

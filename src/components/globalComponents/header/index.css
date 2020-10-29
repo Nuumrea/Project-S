@@ -7,14 +7,14 @@
   background-color: #36454f;
   border-bottom: solid 2px #ffbdbd;
   padding: 0 10% 0 10%;
-  margin: 0 0 5% 0;
+  margin: 0 0 10% 0;
   z-index: 1;
 }
 .header-wrapper > div {
   margin: 0 2% 0 2%;
 }
 .header-wrapper > div > span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s;
 }

@@ -40,13 +40,12 @@ const Content = () => {
       img: Clock,
       title: "Rapide",
       description:
-        "Les temps de chargement rapides et interaction sans lag, sont ma prioritées absolue.",
+        "Des temps de chargement rapides et sans lag, sont ma prioritées absolue.",
     },
     {
       img: Responsive,
       title: "Responsive",
-      description:
-        "Des layout qui fonctionneront sur n'importe quel appareil, grand ou petit.",
+      description: "Des layout qui fonctionneront sur n'importe quel appareil.",
     },
     {
       img: Light,
@@ -57,8 +56,7 @@ const Content = () => {
     {
       img: Ship,
       title: "Dynamique",
-      description:
-        "Les sites Web n'ont pas besoin d'être statiques, j'adore donner vie aux pages.",
+      description: "Les sites Web n'ont pas besoin d'être statiques.",
     },
   ];
 
