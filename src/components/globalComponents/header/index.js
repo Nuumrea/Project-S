@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Assets and Styling
 import "./index.css";
@@ -15,6 +15,42 @@ const Header = ({
   isContact,
   setIsContact,
 }) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 80) {
+        setIsHome(true);
+        setIsProfil(false);
+        setIsProject(false);
+        setIsContact(false);
+      }
+      if (window.scrollY >= 605) {
+        setIsProfil(true);
+        setIsHome(false);
+        setIsProject(false);
+        setIsContact(false);
+      }
+      if (window.scrollY >= 1559) {
+        setIsProject(true);
+        setIsHome(false);
+        setIsProfil(false);
+        setIsContact(false);
+      }
+      if (window.scrollY >= 2400) {
+        setIsContact(true);
+        setIsHome(false);
+        setIsProfil(false);
+        setIsProject(false);
+      }
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+  }, [setIsHome, setIsProfil, setIsProject, setIsContact]);
+
+  // const test = () => {
+  //   console.log(window.scrollY);
+  // };
+  // window.addEventListener("scroll", test);
+
   return (
     <div className="header-wrapper">
       <div

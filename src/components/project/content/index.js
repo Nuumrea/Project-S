@@ -8,10 +8,7 @@ import LeKaba03 from "../../../assets/card/lekaba/lekaba03.png";
 import LeKaba04 from "../../../assets/card/lekaba/lekaba04.png";
 import LeKaba05 from "../../../assets/card/lekaba/lekaba05.png";
 import ToDo01 from "../../../assets/card/todo/todo01.png";
-import ToDo02 from "../../../assets/card/todo/todo02.png";
 import Vitrine01 from "../../../assets/card/vitrine/vitrine01.png";
-import Vitrine02 from "../../../assets/card/vitrine/vitrine02.png";
-import Vitrine03 from "../../../assets/card/vitrine/vitrine03.png";
 
 // Components
 import Title from "../../globalComponents/title/index";
@@ -64,14 +61,14 @@ const Content = () => {
     title: "To do list",
     description: "Simple to do list",
     link: "https://to-do-list-kevin.netlify.app/",
-    pic: [ToDo01, ToDo02],
+    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04, LeKaba05],
     setState: setDisplayModalTodo,
   };
   const modalDataVinyle = {
     title: "Vinyle",
     description: "Simple site en HTML et CSS",
     link: "https://site-vitrine-vinyle.netlify.app/",
-    pic: [Vitrine01, Vitrine02, Vitrine03],
+    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04, LeKaba05],
     setState: setDisplayModalVitrine,
   };
 

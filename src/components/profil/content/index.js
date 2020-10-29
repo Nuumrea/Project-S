@@ -10,7 +10,7 @@ import Ship from "../../../assets/png/rocket.png";
 
 // Components
 import Title from "../../globalComponents/title/index";
-// import Download from "../../globalComponents/download/index";
+import Download from "../../globalComponents/download/index";
 import Skills from "../skills/index";
 import Nindo from "../nindo/index";
 
@@ -90,6 +90,7 @@ const Content = () => {
                 Javascript et de confirmer mon désir de monter en compétences
                 dans le domaine du développement au sein d’une entreprise.
               </p>
+              <Download />
             </div>
           </div>
         </div>

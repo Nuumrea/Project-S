@@ -2,9 +2,7 @@
 .profil-content-dl > a {
   text-decoration: none;
   border: 1px solid #fbf7f5;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #36454f;
-}
-.profil-content-dl > a:hover {
   border-bottom: 1px solid #36454f;
 }

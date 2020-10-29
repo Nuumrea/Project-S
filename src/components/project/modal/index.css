@@ -36,37 +36,38 @@
 }
 .modal-container {
   width: 600px;
-  height: auto;
+  height: 625px;
   background-color: #fbf7f5;
 }
 .modal-img-container {
   width: 100%;
-  height: 50%;
+  height: 385px;
 }
-.modal-img-container > img {
+.modal-img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 .modal-info-container {
   width: 100%;
+  height: 240px;
 }
 .modal-info-title {
   line-height: 50px;
   font-size: 1.5rem;
   border-bottom: 1px solid #ffbdbd;
-  margin: 0 5%;
+  margin: 0 5% 2% 5%;
 }
 .modal-info-description {
   height: 100px;
   font-size: 1rem;
-  margin: 5% 5% 0 5%;
+  margin: 0 5% 2% 5%;
 }
 .modal-button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5% 5% 5%;
+  margin: 0 5%;
 }
 .modal-button {
   display: flex;
