@@ -31,3 +31,25 @@
   font-size: 0.8rem;
   color: #36454f;
 }
+@media (min-width: 768px) {
+  .nindo-img {
+    width: 75px;
+    height: 75px;
+  }
+  .nindo-title {
+    font-size: 1.5rem;
+  }
+  .nindo-description {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .nindo-wrapper {
+    width: 20%;
+    margin: 0 1%;
+  }
+  .nindo-img {
+    width: 100px;
+    height: 100px;
+  }
+}

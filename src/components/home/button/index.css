@@ -22,3 +22,20 @@
   height: 16px;
   width: 16px;
 }
+@media (min-width: 768px) {
+  .home-button > div > span {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .home-button > div {
+    padding: 10px;
+  }
+  .home-button > div > span {
+    font-size: 1.8rem;
+  }
+  .home-button > div > img {
+    height: 20px;
+    width: 20px;
+  }
+}

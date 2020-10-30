@@ -36,7 +36,7 @@
   text-align: center;
 }
 .card-spec {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 .card-container:hover .card-text {
@@ -57,4 +57,19 @@
 .card-link:hover {
   background-color: #ffbdbd;
   color: #36454f;
+}
+@media (min-width: 768px) {
+  .card-container {
+    width: 48%;
+    margin: 1%;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-spec {
+    font-size: 1rem;
+  }
+  .card-link {
+    font-size: 1.2rem;
+  }
 }

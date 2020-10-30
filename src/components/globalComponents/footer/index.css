@@ -21,3 +21,16 @@
 .footer-text > span > span {
   color: #ffbdbd;
 }
+@media (min-width: 768px) {
+  .footer-wrapper {
+    height: auto;
+  }
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-text {
+    font-size: 1.2rem;
+  }
+}

@@ -39,3 +39,29 @@
   color: #36454f;
   font-size: 0.8rem;
 }
+@media (min-width: 768px) {
+  .skills-wrapper {
+    height: 25px;
+    margin: 0 0 3% 0;
+  }
+  .skills-title {
+    font-size: 1rem;
+    width: 100px;
+  }
+  .skills-percent {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .skills-wrapper {
+    height: 20px;
+    margin: 0 0 3% 0;
+  }
+  .skills-title {
+    font-size: 1rem;
+    width: 125px;
+  }
+  .skills-percent {
+    font-size: 1rem;
+  }
+}

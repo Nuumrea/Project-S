@@ -21,3 +21,16 @@
 .header-wrapper > div > span:hover {
   color: #ffbdbd;
 }
+@media (min-width: 768px) {
+  .header-wrapper {
+    margin: 0 0 5% 0;
+  }
+  .header-wrapper > div > span {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header-wrapper > div > span {
+    font-size: 1.5rem;
+  }
+}

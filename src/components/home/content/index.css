@@ -16,3 +16,13 @@
 .home-wrapper > div > div > span > span {
   color: #ffbdbd;
 }
+@media (min-width: 768px) {
+  .home-wrapper > div > div > span {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .home-wrapper > div > div > span {
+    font-size: 2rem;
+  }
+}

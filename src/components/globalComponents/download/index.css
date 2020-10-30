@@ -6,3 +6,8 @@
   color: #36454f;
   border-bottom: 1px solid #36454f;
 }
+@media (min-width: 768px) {
+  .profil-content-dl > a {
+    font-size: 1.2rem;
+  }
+}
