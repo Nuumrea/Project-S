@@ -9,7 +9,7 @@ const SocialMedia = ({ data }) => {
       href={data.link}
       target="_blank"
       rel="noreferrer noopener"
-      className="footer-icon"
+      className="footer-icon bg-pink"
     >
       <img src={data.icon} alt="icon" />
     </a>

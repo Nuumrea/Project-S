@@ -13,7 +13,7 @@ const Button = ({ setIsProfil, setIsHome, setIsContact, setIsProject }) => {
 
   return (
     <div
-      className="home-button"
+      className="home-button fs-button"
       onMouseEnter={() => {
         setIsButtonHover(false);
       }}

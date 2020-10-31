@@ -46,13 +46,8 @@ const Header = ({
     window.addEventListener("scroll", handleScroll);
   }, [setIsHome, setIsProfil, setIsProject, setIsContact]);
 
-  // const test = () => {
-  //   console.log(window.scrollY);
-  // };
-  // window.addEventListener("scroll", test);
-
   return (
-    <div className="header-wrapper">
+    <header className="header-wrapper fs-button">
       <div
         className={isHome ? "pink" : "white"}
         onClick={() => {
@@ -109,7 +104,7 @@ const Header = ({
       >
         <span>Contact</span>
       </div>
-    </div>
+    </header>
   );
 };
 

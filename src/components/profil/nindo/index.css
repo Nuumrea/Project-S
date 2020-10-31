@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   width: 45%;
-  margin: 5% 1%;
+  margin: 15px 0;
 }
 .nindo-img {
   display: flex;
@@ -12,9 +12,8 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color: pink;
   border-radius: 50%;
-  margin: 0 0 5% 0;
+  margin: 0 0 5px 0;
 }
 .nindo-img > img {
   width: 50%;
@@ -23,33 +22,25 @@
   transform: scaleX(-1);
 }
 .nindo-title {
-  font-size: 1.2rem;
-  margin: 0 0 2% 0;
-  color: #36454f;
-}
-.nindo-description {
-  font-size: 0.8rem;
-  color: #36454f;
+  margin: 0 0 5px 0;
 }
 @media (min-width: 768px) {
   .nindo-img {
     width: 75px;
     height: 75px;
   }
-  .nindo-title {
-    font-size: 1.5rem;
-  }
-  .nindo-description {
-    font-size: 1rem;
-  }
 }
 @media (min-width: 1024px) {
   .nindo-wrapper {
     width: 20%;
-    margin: 0 1%;
+    margin: 0;
   }
   .nindo-img {
     width: 100px;
     height: 100px;
+    margin: 0 0 10px 0;
+  }
+  .nindo-title {
+    margin: 0 0 10px 0;
   }
 }

@@ -7,7 +7,7 @@ import "./index.css";
 
 const Title = ({ title }) => {
   return (
-    <div className="profil-title">
+    <div className="profil-title fs-title blue">
       <span>{title}</span>
     </div>
   );

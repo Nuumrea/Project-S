@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
 /* Global Rules */
 body {
   background-color: #fbf7f5;
   font-family: Bahnschrift;
   color: #fbf7f5;
 }
+
+/* COLOR */
 .blue {
   color: #36454f;
 }
@@ -17,4 +20,56 @@ body {
 }
 .white {
   color: #fbf7f5;
+}
+
+/* BACKGROUND COLOR*/
+.bg-blue {
+  background-color: #36454f;
+}
+.bg-pink {
+  background-color: #ffbdbd;
+}
+.bg-white {
+  background-color: #fbf7f5;
+}
+
+/* FONT SIZE */
+.fs-title {
+  font-size: 1.5rem;
+}
+.fs-subtitle {
+  font-size: 1.2rem;
+}
+.fs-button {
+  font-size: 1rem;
+}
+.fs-text {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .fs-title {
+    font-size: 1.8rem;
+  }
+  .fs-subtitle {
+    font-size: 1.5rem;
+  }
+  .fs-button {
+    font-size: 1.2rem;
+  }
+  .fs-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-title {
+    font-size: 2rem;
+  }
+  .fs-subtitle {
+    font-size: 1.8rem;
+  }
+  .fs-button {
+    font-size: 1.5rem;
+  }
 }

@@ -2,45 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 560px;
-  background-color: #36454f;
+  height: 530px;
 }
 .contact-title {
-  font-size: 1.5rem;
   border-bottom: 2px solid #fbf7f5;
-  margin: 0 0 5% 0;
+  margin: 0 0 20px 0;
 }
 .contact-question {
-  margin: 0 0 10% 0;
-  font-size: 0.9rem;
+  margin: 0 0 20px 0;
 }
 @media (min-width: 768px) {
   .contact-wrapper {
-    height: 550px;
-  }
-  .contact-title {
-    font-size: 1.8rem;
-  }
-  .contact-question {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  .contact-wrapper {
-    height: 750px;
-  }
-  .contact-title {
-    font-size: 2rem;
-  }
-  .contact-question {
-    font-size: 1.2rem;
+    height: 560px;
   }
 }
 @media (min-width: 1200px) {
   .contact-wrapper {
-    height: 815px;
-  }
-  .contact-question {
-    margin: 0 0 5% 0;
+    height: 590px;
   }
 }

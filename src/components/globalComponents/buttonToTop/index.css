@@ -1,18 +1,17 @@
 .buttonToTop-wrapper {
   position: absolute;
-  top: -17px;
+  top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: #ffbdbd;
+  width: 40px;
+  height: 40px;
   border-radius: 25px;
   cursor: pointer;
 }
 .buttonToTop-wrapper > img {
-  width: 50%;
-  height: 50%;
+  width: 20px;
+  height: 20px;
 }
 @media (min-width: 768px) {
   .buttonToTop-wrapper {
@@ -20,12 +19,8 @@
     width: 50px;
     height: 50px;
   }
-}
-@media (min-width: 1200px) {
-  .buttonToTop-wrapper {
-    top: -30px;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+  .buttonToTop-wrapper > img {
+    width: 25px;
+    height: 25px;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+
 // Styling
 import "./index.css";
 import Close from "../../../assets/png/close.png";
@@ -10,7 +11,7 @@ import Close from "../../../assets/png/close.png";
 const Modal = ({ data }) => {
   return (
     <div className="modal-wrapper">
-      <div className="modal-container">
+      <div className="modal-container bg-white">
         <Carousel
           className="modal-img-container"
           infiniteLoop={true}
@@ -22,14 +23,14 @@ const Modal = ({ data }) => {
           })}
         </Carousel>
         <div className="modal-info-container">
-          <div className="modal-info-title blue">
+          <div className="modal-info-title blue fs-subtitle">
             <span>{data.title}</span>
           </div>
-          <div className="modal-info-description blue">
+          <div className="modal-info-description blue fs-text">
             <span>{data.description}</span>
           </div>
           <div className="modal-button-container">
-            <div className="modal-button">
+            <div className="modal-button bg-blue">
               <a href={data.link} target="_blank" rel="noreferrer noopener">
                 Voir le site
               </a>

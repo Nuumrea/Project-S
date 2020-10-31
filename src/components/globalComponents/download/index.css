@@ -2,12 +2,6 @@
 .profil-content-dl > a {
   text-decoration: none;
   border: 1px solid #fbf7f5;
-  font-size: 1rem;
   color: #36454f;
   border-bottom: 1px solid #36454f;
-}
-@media (min-width: 768px) {
-  .profil-content-dl > a {
-    font-size: 1.2rem;
-  }
 }

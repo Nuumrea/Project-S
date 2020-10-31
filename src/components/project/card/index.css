@@ -1,8 +1,8 @@
 .card-container {
   position: relative;
   width: 100%;
-  height: 300px;
-  margin: 5% 0;
+  height: 250px;
+  margin: 15px 0;
 }
 .card-img {
   opacity: 1;
@@ -32,44 +32,34 @@
   -ms-transform: translate(-50%, -50%);
 }
 .card-title {
-  font-size: 1.2rem;
   text-align: center;
 }
 .card-spec {
-  font-size: 0.8rem;
   text-align: center;
 }
 .card-container:hover .card-text {
   opacity: 1;
 }
-.card-link {
+.card-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 35px;
-  background-color: #36454f;
+  height: 34px;
   cursor: pointer;
-  color: #fbf7f5;
-  font-size: 1rem;
   transition: 0.5s ease-in-out;
 }
-.card-link:hover {
+.card-button:hover {
   background-color: #ffbdbd;
   color: #36454f;
 }
 @media (min-width: 768px) {
   .card-container {
     width: 48%;
-    margin: 1%;
+    margin: 15px 5px;
   }
-  .card-title {
-    font-size: 1.5rem;
-  }
-  .card-spec {
-    font-size: 1rem;
-  }
-  .card-link {
-    font-size: 1.2rem;
+  .card-button {
+    width: 170px;
+    height: 44px;
   }
 }

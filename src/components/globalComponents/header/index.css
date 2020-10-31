@@ -6,31 +6,22 @@
   height: 50px;
   background-color: #36454f;
   border-bottom: solid 2px #ffbdbd;
-  padding: 0 10% 0 10%;
-  margin: 0 0 10% 0;
+  padding: 0 5%;
+  margin: 0 0 20px 0;
   z-index: 1;
 }
 .header-wrapper > div {
-  margin: 0 2% 0 2%;
+  margin: 0 5% 0 0;
 }
 .header-wrapper > div > span {
-  font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s;
 }
 .header-wrapper > div > span:hover {
   color: #ffbdbd;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .header-wrapper {
-    margin: 0 0 5% 0;
-  }
-  .header-wrapper > div > span {
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .header-wrapper > div > span {
-    font-size: 1.5rem;
+    padding: 0 10%;
   }
 }

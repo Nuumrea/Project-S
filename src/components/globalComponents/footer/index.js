@@ -26,7 +26,7 @@ const Footer = ({ setIsProfil, setIsHome, setIsProject, setIsContact }) => {
     },
   ];
   return (
-    <footer className="footer-wrapper">
+    <footer className="footer-wrapper bg-blue">
       <ButtonToTop
         setIsProfil={setIsProfil}
         setIsHome={setIsHome}
@@ -38,7 +38,7 @@ const Footer = ({ setIsProfil, setIsHome, setIsProject, setIsContact }) => {
           return <SocialMedia data={data} key={index} />;
         })}
       </div>
-      <div className="footer-text">
+      <div className="footer-text fs-text">
         <span>
           Kevin Parayre <span>©2020</span>
         </span>

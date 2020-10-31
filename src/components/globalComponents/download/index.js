@@ -8,7 +8,7 @@ import MyCv from "../../../assets/pdf/KEVINPARAYRECV.pdf";
 
 const Download = () => {
   return (
-    <div className="profil-content-dl">
+    <div className="profil-content-dl fs-button">
       <a href={MyCv} download="KEVINPARAYRECV.pdf">
         Télécharger mon CV
       </a>

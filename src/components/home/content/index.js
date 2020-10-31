@@ -8,7 +8,7 @@ import Button from "../button/index";
 
 const Content = ({ setIsProfil, setIsHome, setIsContact, setIsProject }) => {
   return (
-    <section id="home" className="home-wrapper">
+    <section id="home" className="home-wrapper fs-subtitle">
       <div>
         <div>
           <span>

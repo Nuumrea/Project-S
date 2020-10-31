@@ -74,22 +74,25 @@ const Content = () => {
             <img src={Me} alt="me" />
           </div>
           <div>
-            <div>
+            <div className="fs-subtitle blue">
               <span>Qui suis-je ?</span>
             </div>
             <div>
-              <p>
-                Jeune homme de 30 ans ayant décidé, après avoir été sous-chef
-                dans des restaurants bistronomique, de me reconvertir dans le
-                domaine du développement Web et Mobile. la cuisine m’a appris à
-                être soucieux du détail par son exigence, tout en restant
-                efficace par son rythme de travail. La formation intensive du
-                Reacteur m’a permis d’intégrer les concepts de la programmation
-                Javascript et de confirmer mon désir de monter en compétences
-                dans le domaine du développement au sein d’une entreprise.
-              </p>
-              <Download />
+              <div className="fs-text blue">
+                <p>
+                  Jeune homme de 30 ans ayant décidé, après avoir été sous-chef
+                  dans des restaurants bistronomique, de me reconvertir dans le
+                  domaine du développement Web et Mobile. la cuisine m’a appris
+                  à être soucieux du détail par son exigence, tout en restant
+                  efficace par son rythme de travail. La formation intensive du
+                  Reacteur m’a permis d’intégrer les concepts de la
+                  programmation Javascript et de confirmer mon désir de monter
+                  en compétences dans le domaine du développement au sein d’une
+                  entreprise.
+                </p>
+              </div>
             </div>
+            <Download />
           </div>
         </div>
         <div className="profil-content-block2">

@@ -22,15 +22,15 @@ const Content = ({ data }) => {
       <div
         className={
           isSkill75
-            ? "skills-bar-width bar-width-75"
-            : "skills-bar-width bar-width-85"
+            ? "skills-bar-width bar-width-75 bg-blue"
+            : "skills-bar-width bar-width-85 bg-blue"
         }
       >
-        <div className="skills-title">
+        <div className="skills-title fs-text blue bg-pink">
           <span>{data.title}</span>
         </div>
       </div>
-      <div className="skills-percent">
+      <div className="skills-percent fs-text blue">
         <span>{data.percent}</span>
       </div>
     </div>

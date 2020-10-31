@@ -13,7 +13,7 @@ const ButtonToTop = ({
 }) => {
   return (
     <div
-      className="buttonToTop-wrapper"
+      className="buttonToTop-wrapper bg-pink"
       onClick={() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         setIsHome(false);
