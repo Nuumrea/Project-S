@@ -126,3 +126,9 @@
     height: 720px;
   }
 }
+@media (min-width: 1800px) {
+  .modal-container {
+    width: 900px;
+    height: 780px;
+  }
+}

@@ -78,3 +78,8 @@
     height: 200px;
   }
 }
+@media (min-width: 1800px) {
+  .profil-wrapper {
+    margin: 0 15% 60px 15%;
+  }
+}

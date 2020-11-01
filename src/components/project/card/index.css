@@ -63,3 +63,8 @@
     height: 44px;
   }
 }
+@media (min-width: 1800px) {
+  .card-container {
+    height: 300px;
+  }
+}

@@ -25,3 +25,9 @@
     margin: 0 20% 20px 20%;
   }
 }
+@media (min-width: 1800px) {
+  .project-wrapper {
+    margin: 0 25% 60px 25%;
+    height: 850px;
+  }
+}

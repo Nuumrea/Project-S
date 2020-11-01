@@ -21,3 +21,14 @@
     height: 590px;
   }
 }
+@media (min-width: 1800px) {
+  .contact-wrapper {
+    height: 720px;
+  }
+  .contact-title {
+    margin: 0 0 60px 0;
+  }
+  .contact-question {
+    margin: 0 0 40px 0;
+  }
+}

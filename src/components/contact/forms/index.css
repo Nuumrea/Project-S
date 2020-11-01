@@ -80,3 +80,11 @@
     height: 44px;
   }
 }
+@media (min-width: 1800px) {
+  .forms-wrapper {
+    width: 50%;
+  }
+  .forms-wrapper > div > textarea {
+    min-height: 300px;
+  }
+}
