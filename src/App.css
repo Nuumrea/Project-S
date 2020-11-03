@@ -6,50 +6,61 @@
 
 /* Global Rules */
 body {
-  background-color: #fbf7f5;
+  background-color: #232b2b;
   font-family: Bahnschrift;
   color: #fbf7f5;
 }
 
 /* COLOR */
-.blue {
-  color: #36454f;
-}
 .pink {
   color: #ffbdbd;
 }
 .white {
   color: #fbf7f5;
 }
+.black {
+  color: #232b2b;
+}
 
 /* BACKGROUND COLOR*/
-.bg-blue {
-  background-color: #36454f;
+.bg-black {
+  background-color: #0e1111;
 }
-.bg-pink {
-  background-color: #ffbdbd;
+.bg-medium-black {
+  background-color: #232b2b;
+}
+.bg-light-black {
+  background-color: #353839;
 }
 .bg-white {
   background-color: #fbf7f5;
 }
-
+.bg-pink {
+  background-color: #ffbdbd;
+}
 /* FONT SIZE */
 .fs-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 .fs-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 .fs-button {
   font-size: 1rem;
+  font-weight: bolder;
 }
 .fs-text {
   font-size: 0.8rem;
 }
-
+.fs-menu {
+  font-size: 0.7rem;
+  font-weight: bolder;
+}
 @media (min-width: 768px) {
   .fs-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .fs-subtitle {
     font-size: 1.5rem;
@@ -61,29 +72,8 @@ body {
     font-size: 1rem;
   }
 }
-
 @media (min-width: 1200px) {
-  .fs-title {
-    font-size: 2rem;
-  }
-  .fs-subtitle {
-    font-size: 1.8rem;
-  }
-  .fs-button {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1800px) {
-  .fs-title {
-    font-size: 2.5rem;
-  }
-  .fs-subtitle {
-    font-size: 2rem;
-  }
-  .fs-button {
-    font-size: 1.5rem;
-  }
-  .fs-text {
-    font-size: 1.2rem;
+  .fs-menu {
+    font-size: 1rem;
   }
 }

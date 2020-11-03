@@ -5,7 +5,7 @@ import "./index.css";
 
 // Components
 
-const Content = ({ data }) => {
+const SkillsBar = ({ data }) => {
   const [isSkill75, setIsSkill75] = useState(false);
 
   useEffect(() => {
@@ -18,23 +18,17 @@ const Content = ({ data }) => {
   }, [data.percent]);
 
   return (
-    <div className="skills-wrapper">
-      <div
-        className={
-          isSkill75
-            ? "skills-bar-width bar-width-75 bg-blue"
-            : "skills-bar-width bar-width-85 bg-blue"
-        }
-      >
-        <div className="skills-title fs-text blue bg-pink">
+    <div className="skillsBar-wrapper">
+      <div className={isSkill75 ? "skillsBar-width-75" : "skillsBar-width-85"}>
+        <div className="skillsBar-title fs-text black bg-pink">
           <span>{data.title}</span>
         </div>
       </div>
-      <div className="skills-percent fs-text blue">
+      <div className="skillsBar-percent fs-text">
         <span>{data.percent}</span>
       </div>
     </div>
   );
 };
 
-export default Content;
+export default SkillsBar;

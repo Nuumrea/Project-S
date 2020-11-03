@@ -1,85 +1,40 @@
 .profil-wrapper {
-  margin: 0 5% 20px 5%;
-  height: auto;
-}
-/* nindo */
-.nindo-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 0 20px 0;
-}
-/* CONTENT */
-.profil-content {
-  display: flex;
-  flex-direction: column;
-}
-.profil-content-block1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 20px 0;
-}
-.profil-content-block1 > div {
-  text-align: center;
-}
-.profil-content-block1 > div > img {
-  width: 150px;
-  height: 150px;
-  margin: 0 0 10px 0;
-}
-.profil-content-block1 > div > div {
-  margin: 0 0 15px 0;
-}
-.profil-content-block2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.profil-wrapper > div {
+  width: 90%;
+  max-width: 450px;
+}
+.profil-subtitle {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 50px 0;
+}
+.profil-description {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 50px 0;
 }
 @media (min-width: 768px) {
-  .nindo-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 0 40px 0;
-  }
-  .profil-content-block1 {
-    margin: 0 0 40px 0;
+  .profil-wrapper > div {
+    margin: 0 5% 0 15%;
+    max-width: 615px;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
-  .profil-content {
-    display: flex;
-    flex-direction: row;
-    margin: 0 0 40px 0;
-  }
-  .profil-content-block1 {
-    flex: 1;
-    margin: 0;
-  }
-  .profil-content-block2 {
-    flex: 1;
-    align-items: flex-end;
+  .profil-wrapper > div {
+    margin: 0 10% 0 20%;
+    max-width: 720px;
   }
 }
 @media (min-width: 1200px) {
-  .profil-wrapper {
-    margin: 0 10% 20px 10%;
-  }
-  .profil-content {
-    margin: 0 0 60px 0;
-  }
-  .nindo-content {
-    margin: 0 0 60px 0;
-  }
-  .profil-content-block1 > div > img {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (min-width: 1800px) {
-  .profil-wrapper {
-    margin: 0 15% 60px 15%;
+  .profil-wrapper > div {
+    margin: 0 15% 0 25%;
   }
 }

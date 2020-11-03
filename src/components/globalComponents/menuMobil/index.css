@@ -1,0 +1,14 @@
+.menuMobil-wrapper {
+  position: absolute;
+  top: 5%;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .menuMobil-wrapper {
+    display: none;
+  }
+}

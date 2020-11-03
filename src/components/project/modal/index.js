@@ -11,7 +11,7 @@ import Close from "../../../assets/png/close.png";
 const Modal = ({ data }) => {
   return (
     <div className="modal-wrapper">
-      <div className="modal-container bg-white">
+      <div className="modal-container bg-medium-black">
         <Carousel
           className="modal-img-container"
           infiniteLoop={true}
@@ -23,14 +23,14 @@ const Modal = ({ data }) => {
           })}
         </Carousel>
         <div className="modal-info-container">
-          <div className="modal-info-title blue fs-subtitle">
+          <div className="modal-info-title fs-subtitle">
             <span>{data.title}</span>
           </div>
-          <div className="modal-info-description blue fs-text">
+          <div className="modal-info-description fs-text">
             <span>{data.description}</span>
           </div>
           <div className="modal-button-container">
-            <div className="modal-button bg-blue">
+            <div className="modal-button">
               <a href={data.link} target="_blank" rel="noreferrer noopener">
                 Voir le site
               </a>

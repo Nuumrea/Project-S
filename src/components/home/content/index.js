@@ -4,31 +4,18 @@ import React from "react";
 import "./index.css";
 
 // Components
-import Button from "../button/index";
 
-const Content = ({ setIsProfil, setIsHome, setIsContact, setIsProject }) => {
+const HomeContent = () => {
   return (
-    <section id="home" className="home-wrapper fs-subtitle">
+    <section id="home" className="home-wrapper fs-title">
       <div>
-        <div>
-          <span>
-            Bonjour, je suis <span>Kévin Parayre</span>.
-          </span>
-        </div>
-        <div>
-          <span>Web développeur front-end.</span>
-        </div>
-      </div>
-      <div>
-        <Button
-          setIsProfil={setIsProfil}
-          setIsHome={setIsHome}
-          setIsProject={setIsProject}
-          setIsContact={setIsContact}
-        />
+        <span>
+          Bonjour, je suis <span>Kévin Parayre</span>,<br />
+          Web développeur front-end.
+        </span>
       </div>
     </section>
   );
 };
 
-export default Content;
+export default HomeContent;

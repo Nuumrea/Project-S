@@ -11,10 +11,10 @@ const Content = ({ data }) => {
       <div className="nindo-img bg-pink">
         <img src={data.img} alt="icon" />
       </div>
-      <div className="nindo-title fs-subtitle blue">
+      <div className="nindo-title fs-subtitle">
         <span>{data.title}</span>
       </div>
-      <div className="nindo-description fs-text blue">
+      <div className="nindo-description fs-text">
         <p>{data.description}</p>
       </div>
     </div>

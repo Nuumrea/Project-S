@@ -1,7 +1,7 @@
 /* DL */
 .profil-content-dl > a {
   text-decoration: none;
-  border: 1px solid #fbf7f5;
-  color: #36454f;
-  border-bottom: 1px solid #36454f;
+  border: none;
+  color: #ffbdbd;
+  border-bottom: 1px solid #ffbdbd;
 }

@@ -1,49 +1,63 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
+import NavBar from "./components/globalComponents/navBar/index";
+import NavBarMobil from "./components/globalComponents/navBarMobil/index";
+import MenuMobil from "./components/globalComponents/menuMobil/index";
 import Home from "./components/home/content/index";
-import Header from "./components/globalComponents/header/index";
 import Profil from "./components/profil/content/index";
+import Skills from "./components/skills/content/index";
 import Project from "./components/project/content/index";
 import Contact from "./components/contact/content/index";
-import Footer from "./components/globalComponents/footer/index";
 
 // import Styling and Assets
 import "./App.css";
 
 const App = () => {
-  const [isHome, setIsHome] = useState(false);
-  const [isProfil, setIsProfil] = useState(false);
-  const [isProject, setIsProject] = useState(false);
-  const [isContact, setIsContact] = useState(false);
+  const [isMenuExtend, setIsMenuExtend] = useState(false);
+  const [isSizeScreen, setIsSizeScreen] = useState(false);
+
+  useEffect(() => {
+    const fetchSizeScreen = () => {
+      if (window.innerWidth >= 768) {
+        setIsSizeScreen(true);
+      }
+    };
+    fetchSizeScreen();
+  }, [isSizeScreen, setIsSizeScreen]);
+
   return (
-    <>
-      <Home
-        setIsProfil={setIsProfil}
-        setIsHome={setIsHome}
-        setIsProject={setIsProject}
-        setIsContact={setIsContact}
-      />
-      <Header
-        isHome={isHome}
-        setIsHome={setIsHome}
-        isProfil={isProfil}
-        setIsProfil={setIsProfil}
-        isProject={isProject}
-        setIsProject={setIsProject}
-        isContact={isContact}
-        setIsContact={setIsContact}
-      />
-      <Profil />
-      <Project />
-      <Contact />
-      <Footer
-        setIsProfil={setIsProfil}
-        setIsHome={setIsHome}
-        setIsProject={setIsProject}
-        setIsContact={setIsContact}
-      />
-    </>
+    <Router>
+      {isSizeScreen ? (
+        <NavBar />
+      ) : (
+        <>
+          <NavBarMobil
+            isMenuExtend={isMenuExtend}
+            setIsMenuExtend={setIsMenuExtend}
+          />
+          {isMenuExtend ? <MenuMobil /> : null}
+        </>
+      )}
+      <Switch>
+        <Route path="/profil">
+          <Profil />
+        </Route>
+        <Route path="/skills">
+          <Skills />
+        </Route>
+        <Route path="/project">
+          <Project />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 

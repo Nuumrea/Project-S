@@ -1,16 +1,15 @@
 .forms-wrapper {
-  width: 80%;
+  width: 100%;
   height: auto;
-  transition: 0.5s ease-in-out;
 }
 .forms-wrapper > div {
   margin: 0 0 10px 0;
 }
 .forms-wrapper > div > input {
   width: 100%;
-  padding: 1% 1%;
+  padding: 1%;
   outline: none;
-  color: #36454f;
+  color: #232b2b;
   font-family: Bahnschrift;
   border: 1px solid #ffbdbd;
   box-sizing: border-box;
@@ -19,9 +18,9 @@
 .forms-wrapper > div > textarea {
   width: 100%;
   min-height: 150px;
-  padding: 1% 1%;
+  padding: 1%;
   outline: none;
-  color: #36454f;
+  color: #232b2b;
   font-family: Bahnschrift;
   border: 1px solid #ffbdbd;
   box-sizing: border-box;
@@ -37,16 +36,11 @@
   outline: none;
   cursor: pointer;
   font-family: Bahnschrift;
-  color: #fbf7f5;
-  background-color: #36454f;
-  border: 1px solid #fbf7f5;
+  color: #ffbdbd;
+  background-color: #232b2b;
+  border: 1px solid #ffbdbd;
   transition: all 0.5s;
   font-size: 1rem;
-}
-.form-submit > div > input:hover {
-  background-color: #ffbdbd;
-  color: #36454f;
-  border: none;
 }
 .message-wrapper {
   display: flex;
@@ -62,29 +56,5 @@
   }
   .form-submit > div > input {
     font-size: 1.2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .forms-wrapper {
-    width: 60%;
-  }
-  . .forms-wrapper > div > input {
-    font-size: 1.2rem;
-  }
-  .forms-wrapper > div > textarea {
-    font-size: 1.2rem;
-    min-height: 250px;
-  }
-  .form-submit > div > input {
-    font-size: 1.5rem;
-    height: 44px;
-  }
-}
-@media (min-width: 1800px) {
-  .forms-wrapper {
-    width: 50%;
-  }
-  .forms-wrapper > div > textarea {
-    min-height: 300px;
   }
 }

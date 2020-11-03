@@ -11,16 +11,16 @@ const Card = ({ data }) => {
       <img className="card-img" src={data.pic} alt="background" />
       <div className="card-text">
         <div>
-          <div className="card-title fs-subtitle blue">
+          <div className="card-title fs-subtitle">
             <span>{data.title}</span>
           </div>
-          <div className="card-spec fs-text blue">
+          <div className="card-spec fs-text">
             <span>{data.spec}</span>
           </div>
         </div>
         <div>
           <div
-            className="card-button fs-button white bg-blue"
+            className="card-button fs-button"
             onClick={() => {
               data.setState(true);
             }}

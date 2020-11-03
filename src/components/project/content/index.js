@@ -11,7 +11,6 @@ import ToDo01 from "../../../assets/card/todo/todo01.png";
 import Vitrine01 from "../../../assets/card/vitrine/vitrine01.png";
 
 // Components
-import Title from "../../globalComponents/title/index";
 import Card from "../card/index";
 import Modal from "../modal/index";
 
@@ -19,8 +18,6 @@ const Content = () => {
   const [displayModalKaba, setDisplayModalKaba] = useState(false);
   const [displayModalTodo, setDisplayModalTodo] = useState(false);
   const [displayModalVitrine, setDisplayModalVitrine] = useState(false);
-
-  let titleSection = "Project";
 
   const cardData = [
     {
@@ -74,15 +71,16 @@ const Content = () => {
 
   return (
     <section id="project" className="project-wrapper">
-      <Title title={titleSection} />
-      {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
-      {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
-      {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
-      {displayModalVitrine ? <Modal data={modalDataVinyle} /> : null}
-      <div className="project-card-container">
-        {cardData.map((data, index) => {
-          return <Card data={data} key={index} />;
-        })}
+      <div>
+        {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
+        {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
+        {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
+        {displayModalVitrine ? <Modal data={modalDataVinyle} /> : null}
+        <div className="project-card-container">
+          {cardData.map((data, index) => {
+            return <Card data={data} key={index} />;
+          })}
+        </div>
       </div>
     </section>
   );

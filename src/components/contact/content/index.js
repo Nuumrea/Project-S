@@ -8,14 +8,13 @@ import Forms from "../forms/index";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-wrapper bg-blue">
-      <div className="contact-title fs-title white">
-        <span>Contact</span>
+    <section id="contact" className="contact-wrapper">
+      <div>
+        <div className="contact-question fs-subtitle">
+          <span>Une question ou envie de travailler avec moi ?</span>
+        </div>
+        <Forms />
       </div>
-      <div className="contact-question fs-text white">
-        <span>Une question ou envie de travailler avec moi ?</span>
-      </div>
-      <Forms />
     </section>
   );
 };
