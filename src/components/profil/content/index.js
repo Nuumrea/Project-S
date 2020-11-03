@@ -11,7 +11,11 @@ const ProfilContent = () => {
     <section id="profil" className="profil-wrapper">
       <div>
         <div className="profil-subtitle fs-title pink">
-          <span>Qui suis-je ?</span>
+          <span id="profil1">Qui</span>
+          <span id="profil2"> suis</span>
+          <span id="profil3">-</span>
+          <span id="profil4">je</span>
+          <span id="profil5"> ?</span>
         </div>
         <div className="profil-description fs-text">
           <p>

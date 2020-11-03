@@ -5,8 +5,64 @@
   width: 100%;
   min-height: 100vh;
 }
-.home-wrapper > div > span > span {
+#home1 {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  -webkit-timing-function: linear;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+#home2 {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  -webkit-timing-function: ease-in;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+#home3 {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  -webkit-timing-function: ease-in;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+
   color: #ffbdbd;
+}
+#home4 {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
+  -webkit-timing-function: ease-in;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
+}
+#home5 {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  -webkit-timing-function: ease-in;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (min-width: 768px) {
   .home-wrapper {
