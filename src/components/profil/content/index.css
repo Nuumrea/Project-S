@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 .profil-wrapper > div {
@@ -35,6 +35,6 @@
 }
 @media (min-width: 1200px) {
   .profil-wrapper > div {
-    margin: 0 15% 0 25%;
+    max-width: 800px;
   }
 }

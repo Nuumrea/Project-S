@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .home-wrapper > div > span > span {
   color: #ffbdbd;
@@ -23,10 +23,5 @@
 @media (min-width: 1024px) {
   .home-wrapper > div {
     margin: 15% 10% 0 20%;
-  }
-}
-@media (min-width: 1200px) {
-  .home-wrapper > div {
-    margin: 15% 15% 0 25%;
   }
 }

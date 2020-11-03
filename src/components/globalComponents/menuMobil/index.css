@@ -1,11 +1,12 @@
 .menuMobil-wrapper {
   position: absolute;
-  top: 5%;
+  top: 60px;
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #ffbdbd;
 }
 @media (min-width: 768px) {
   .menuMobil-wrapper {
