@@ -9,7 +9,14 @@
 .skills-wrapper > div {
   max-width: 450px;
   width: 90%;
-  margin: 0 0 40px 0;
+}
+.skills-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 25px 0;
+}
+.skills-title > div {
+  border-bottom: 2px solid #fbf7f5;
 }
 .skills-nindo-container {
   display: flex;
@@ -18,6 +25,9 @@
   align-items: center;
 }
 @media (min-width: 768px) {
+  .skills-title {
+    margin: 0 0 50px 0;
+  }
   .skills-wrapper {
     justify-content: center;
   }

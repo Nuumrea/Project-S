@@ -56,8 +56,13 @@ const Skills = ({ data }) => {
   ];
 
   return (
-    <section className="skills-wrapper">
+    <section id="skills" className="skills-wrapper">
       <div>
+        <div className="skills-title fs-title">
+          <div>
+            <span>Compétences</span>
+          </div>
+        </div>
         <div className="skills-nindo-container">
           {dataNindo.map((data, index) => {
             return <Nindo data={data} key={index} />;

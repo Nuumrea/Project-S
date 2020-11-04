@@ -8,13 +8,23 @@
 .project-wrapper > div {
   width: 90%;
   max-width: 320px;
-  margin: 0 0 40px 0;
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 25px 0;
+}
+.project-title > div {
+  border-bottom: 2px solid #fbf7f5;
 }
 .project-card-container {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 768px) {
+  .project-title {
+    margin: 0 0 50px 0;
+  }
   .project-wrapper {
     align-items: center;
   }

@@ -10,6 +10,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-wrapper">
       <div>
+        <div className="contact-title fs-title">
+          <div>
+            <span>Contact</span>
+          </div>
+        </div>
         <div className="contact-question fs-subtitle">
           <span id="contact1">Une question</span>
           <span id="contact2"> ou</span>

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import NavBar from "./components/globalComponents/navBar/index";
-import NavBarMobil from "./components/globalComponents/navBarMobil/index";
-import MenuMobil from "./components/globalComponents/menuMobil/index";
+import Nav from "./components/globalComponents/nav/index";
+import NavMobil from "./components/globalComponents/navMobil/index";
+import NavMobilExtention from "./components/globalComponents/navMobilExtention/index";
 import Home from "./components/home/content/index";
 import Profil from "./components/profil/content/index";
 import Skills from "./components/skills/content/index";
@@ -15,8 +14,13 @@ import Contact from "./components/contact/content/index";
 import "./App.css";
 
 const App = () => {
-  const [isMenuExtend, setIsMenuExtend] = useState(false);
+  const [isMenuExtend, setIsMenuExtend] = useState(true);
   const [isSizeScreen, setIsSizeScreen] = useState(false);
+  const [isHomeSelect, setIsHomeSelect] = useState(false);
+  const [isProfilSelect, setIsProfilSelect] = useState(false);
+  const [isSkillsSelect, setIsSkillsSelect] = useState(false);
+  const [isProjectSelect, setIsProjectSelect] = useState(false);
+  const [isContactSelect, setIsContactSelect] = useState(false);
 
   useEffect(() => {
     const fetchSizeScreen = () => {
@@ -28,36 +32,48 @@ const App = () => {
   }, [isSizeScreen, setIsSizeScreen]);
 
   return (
-    <Router>
+    <>
       {isSizeScreen ? (
-        <NavBar />
+        <Nav
+          isHomeSelect={isHomeSelect}
+          setIsHomeSelect={setIsHomeSelect}
+          isProfilSelect={isProfilSelect}
+          setIsProfilSelect={setIsProfilSelect}
+          isSkillsSelect={isSkillsSelect}
+          setIsSkillsSelect={setIsSkillsSelect}
+          isProjectSelect={isProjectSelect}
+          setIsProjectSelect={setIsProjectSelect}
+          isContactSelect={isContactSelect}
+          setIsContactSelect={setIsContactSelect}
+        />
       ) : (
         <>
-          <NavBarMobil
+          <NavMobil
             isMenuExtend={isMenuExtend}
             setIsMenuExtend={setIsMenuExtend}
           />
-          {isMenuExtend ? <MenuMobil /> : null}
+          {isMenuExtend ? (
+            <NavMobilExtention
+              isHomeSelect={isHomeSelect}
+              setIsHomeSelect={setIsHomeSelect}
+              isProfilSelect={isProfilSelect}
+              setIsProfilSelect={setIsProfilSelect}
+              isSkillsSelect={isSkillsSelect}
+              setIsSkillsSelect={setIsSkillsSelect}
+              isProjectSelect={isProjectSelect}
+              setIsProjectSelect={setIsProjectSelect}
+              isContactSelect={isContactSelect}
+              setIsContactSelect={setIsContactSelect}
+            />
+          ) : null}
         </>
       )}
-      <Switch>
-        <Route path="/profil">
-          <Profil />
-        </Route>
-        <Route path="/skills">
-          <Skills />
-        </Route>
-        <Route path="/project">
-          <Project />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+      <Home />
+      <Profil />
+      <Skills />
+      <Project />
+      <Contact />
+    </>
   );
 };
 

@@ -18,13 +18,19 @@ const SkillsBar = ({ data }) => {
   }, [data.percent]);
 
   return (
-    <div className="skillsBar-wrapper">
-      <div className={isSkill75 ? "skillsBar-width-75" : "skillsBar-width-85"}>
-        <div className="skillsBar-title fs-text black bg-pink">
+    <div className="skillsBar-wrapper bg-white">
+      <div
+        className={
+          isSkill75
+            ? "skillsBar-width-75 bg-medium-black"
+            : "skillsBar-width-85 bg-medium-black"
+        }
+      >
+        <div className="skillsBar-title bg-pink black fs-text">
           <span>{data.title}</span>
         </div>
       </div>
-      <div className="skillsBar-percent fs-text">
+      <div className="skillsBar-percent black fs-text">
         <span>{data.percent}</span>
       </div>
     </div>

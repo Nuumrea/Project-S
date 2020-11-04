@@ -10,6 +10,11 @@ const ProfilContent = () => {
   return (
     <section id="profil" className="profil-wrapper">
       <div>
+        <div className="profil-title fs-title">
+          <div>
+            <span>Profil</span>
+          </div>
+        </div>
         <div className="profil-subtitle fs-title pink">
           <span id="profil1">Qui</span>
           <span id="profil2"> suis</span>

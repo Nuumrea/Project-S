@@ -72,6 +72,11 @@ const Content = () => {
   return (
     <section id="project" className="project-wrapper">
       <div>
+        <div className="project-title fs-title">
+          <div>
+            <span>Project</span>
+          </div>
+        </div>
         {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
         {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
         {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
