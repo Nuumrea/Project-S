@@ -102,11 +102,6 @@ const NavBar = ({
           <div
             className="menu-icon fs-menu"
             onClick={() => {
-              setIsHomeSelect(true);
-              setIsProfilSelect(false);
-              setIsSkillsSelect(false);
-              setIsProjectSelect(false);
-              setIsContactSelect(false);
               document.getElementById("home").scrollIntoView({
                 behavior: "smooth",
               });
@@ -121,11 +116,6 @@ const NavBar = ({
           <div
             className="menu-icon fs-menu"
             onClick={() => {
-              setIsProfilSelect(true);
-              setIsHomeSelect(false);
-              setIsSkillsSelect(false);
-              setIsProjectSelect(false);
-              setIsContactSelect(false);
               document.getElementById("profil").scrollIntoView({
                 behavior: "smooth",
               });
@@ -140,11 +130,6 @@ const NavBar = ({
           <div
             className="menu-icon fs-menu"
             onClick={() => {
-              setIsSkillsSelect(true);
-              setIsProfilSelect(false);
-              setIsHomeSelect(false);
-              setIsProjectSelect(false);
-              setIsContactSelect(false);
               document.getElementById("skills").scrollIntoView({
                 behavior: "smooth",
               });
@@ -159,11 +144,6 @@ const NavBar = ({
           <div
             className="menu-icon fs-menu"
             onClick={() => {
-              setIsProjectSelect(true);
-              setIsSkillsSelect(false);
-              setIsProfilSelect(false);
-              setIsHomeSelect(false);
-              setIsContactSelect(false);
               document.getElementById("project").scrollIntoView({
                 behavior: "smooth",
               });
@@ -178,11 +158,6 @@ const NavBar = ({
           <div
             className="menu-icon fs-menu"
             onClick={() => {
-              setIsContactSelect(true);
-              setIsProjectSelect(false);
-              setIsSkillsSelect(false);
-              setIsProfilSelect(false);
-              setIsHomeSelect(false);
               document.getElementById("contact").scrollIntoView({
                 behavior: "smooth",
               });

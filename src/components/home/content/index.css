@@ -1,9 +1,14 @@
 .home-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+}
+.home-block2 {
+  position: absolute;
+  bottom: 0;
 }
 #home1 {
   -webkit-animation-name: fadeIn;
@@ -28,7 +33,6 @@
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-timing-function: ease-in;
-
   color: #ffbdbd;
 }
 #home4 {
@@ -68,16 +72,16 @@
   .home-wrapper {
     align-items: flex-start;
   }
-  .home-wrapper > div {
+  .home-block1 {
     width: 100%;
     margin: 15% 5% 0 15%;
   }
-  .home-wrapper > div > span > span {
+  .home-block1 > span > span {
     color: #ffbdbd;
   }
 }
 @media (min-width: 1024px) {
-  .home-wrapper > div {
+  .home-block1 {
     margin: 15% 10% 0 20%;
   }
 }
