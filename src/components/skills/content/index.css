@@ -13,7 +13,7 @@
 .skills-title {
   display: flex;
   justify-content: center;
-  margin: 0 0 25px 0;
+  margin: 0 0 50px 0;
 }
 .skills-title > div {
   border-bottom: 2px solid #fbf7f5;

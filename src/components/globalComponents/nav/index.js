@@ -29,35 +29,35 @@ const NavBar = ({
 }) => {
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 0 && window.scrollY < 689) {
+      if (window.scrollY >= 0 && window.scrollY < 676) {
         setIsHomeSelect(true);
         setIsProfilSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 689 && window.scrollY < 1378) {
+      if (window.scrollY >= 676 && window.scrollY < 1365) {
         setIsProfilSelect(true);
         setIsHomeSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 1378 && window.scrollY < 2067) {
+      if (window.scrollY >= 1365 && window.scrollY < 2054) {
         setIsSkillsSelect(true);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2067 && window.scrollY < 2257) {
+      if (window.scrollY >= 2054 && window.scrollY < 2743) {
         setIsProjectSelect(true);
         setIsSkillsSelect(false);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2257) {
+      if (window.scrollY >= 2743) {
         setIsContactSelect(true);
         setIsProjectSelect(false);
         setIsSkillsSelect(false);
