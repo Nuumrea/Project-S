@@ -19,13 +19,13 @@ const HomeContent = ({ isSizeScreen }) => {
   };
 
   return (
-    <section id="home" className="home-wrapper fs-title">
+    <section id="home" className="home-wrapper">
       {isSizeScreen ? (
         <ParticlesBg type="cobweb" color="#ffbdbd" num="80" bg={true} />
       ) : (
         <ParticlesBg type="cobweb" color="#ffbdbd" num="20" bg={true} />
       )}
-      <div className="home-block1">
+      <div className="home-block1 fs-title">
         <span id="home1">Bonjour,</span>
         <span id="home2"> je suis</span>
         <span id="home3"> Kévin Parayre.</span>

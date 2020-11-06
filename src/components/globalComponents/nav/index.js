@@ -27,53 +27,53 @@ const NavBar = ({
   isContactSelect,
   setIsContactSelect,
 }) => {
-  useEffect(() => {
-    const onScrollMenu = () => {
-      if (window.scrollY >= 0 && window.scrollY < 676) {
-        setIsHomeSelect(true);
-        setIsProfilSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 676 && window.scrollY < 1365) {
-        setIsProfilSelect(true);
-        setIsHomeSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 1365 && window.scrollY < 2054) {
-        setIsSkillsSelect(true);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 2054 && window.scrollY < 2743) {
-        setIsProjectSelect(true);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 2743) {
-        setIsContactSelect(true);
-        setIsProjectSelect(false);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-      }
-    };
-    onScrollMenu();
-    window.addEventListener("scroll", onScrollMenu);
-  }, [
-    setIsHomeSelect,
-    setIsProfilSelect,
-    setIsSkillsSelect,
-    setIsProjectSelect,
-    setIsContactSelect,
-  ]);
+  // useEffect(() => {
+  //   const onScrollMenu = () => {
+  //     if (window.scrollY <= 676) {
+  //       setIsHomeSelect(true);
+  //       setIsProfilSelect(false);
+  //       setIsSkillsSelect(false);
+  //       setIsProjectSelect(false);
+  //       setIsContactSelect(false);
+  //     }
+  //     if (window.scrollY >= 676 && window.scrollY < 1365) {
+  //       setIsProfilSelect(true);
+  //       setIsHomeSelect(false);
+  //       setIsSkillsSelect(false);
+  //       setIsProjectSelect(false);
+  //       setIsContactSelect(false);
+  //     }
+  //     if (window.scrollY >= 1365 && window.scrollY < 2054) {
+  //       setIsSkillsSelect(true);
+  //       setIsProfilSelect(false);
+  //       setIsHomeSelect(false);
+  //       setIsProjectSelect(false);
+  //       setIsContactSelect(false);
+  //     }
+  //     if (window.scrollY >= 2054 && window.scrollY < 2743) {
+  //       setIsProjectSelect(true);
+  //       setIsSkillsSelect(false);
+  //       setIsProfilSelect(false);
+  //       setIsHomeSelect(false);
+  //       setIsContactSelect(false);
+  //     }
+  //     if (window.scrollY >= 2743) {
+  //       setIsContactSelect(true);
+  //       setIsProjectSelect(false);
+  //       setIsSkillsSelect(false);
+  //       setIsProfilSelect(false);
+  //       setIsHomeSelect(false);
+  //     }
+  //   };
+  //   onScrollMenu();
+  //   window.addEventListener("scroll", onScrollMenu);
+  // }, [
+  //   setIsHomeSelect,
+  //   setIsProfilSelect,
+  //   setIsSkillsSelect,
+  //   setIsProjectSelect,
+  //   setIsContactSelect,
+  // ]);
 
   const socialMediaData = [
     {
@@ -110,7 +110,7 @@ const NavBar = ({
             {isHomeSelect ? (
               <span>Home</span>
             ) : (
-              <img src={HomeWhite} alt="home" />
+              <img src={HomeWhite} alt="home icon" />
             )}
           </div>
           <div
@@ -124,7 +124,7 @@ const NavBar = ({
             {isProfilSelect ? (
               <span>Profil</span>
             ) : (
-              <img src={ProfilWhite} alt="profil" />
+              <img src={ProfilWhite} alt="profil icon" />
             )}
           </div>
           <div
@@ -138,7 +138,7 @@ const NavBar = ({
             {isSkillsSelect ? (
               <span>Compétences</span>
             ) : (
-              <img src={SkillsWhite} alt="skills" />
+              <img src={SkillsWhite} alt="skills icon" />
             )}
           </div>
           <div
@@ -152,7 +152,7 @@ const NavBar = ({
             {isProjectSelect ? (
               <span>Projets</span>
             ) : (
-              <img src={ProjectWhite} alt="project" />
+              <img src={ProjectWhite} alt="project icon" />
             )}
           </div>
           <div
@@ -166,7 +166,7 @@ const NavBar = ({
             {isContactSelect ? (
               <span>Contact</span>
             ) : (
-              <img src={ContactWhite} alt="contact" />
+              <img src={ContactWhite} alt="contact icon" />
             )}
           </div>
         </div>
