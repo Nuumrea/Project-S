@@ -8,7 +8,7 @@ import ScrollDown from "../../../assets/animation/scrollDown.json";
 
 // Components
 
-const HomeContent = () => {
+const HomeContent = ({ isSizeScreen }) => {
   const scrollOption = {
     loop: true,
     autoplay: true,
@@ -20,7 +20,11 @@ const HomeContent = () => {
 
   return (
     <section id="home" className="home-wrapper fs-title">
-      <ParticlesBg type="cobweb" color="#ffbdbd" num="80" bg={true} />
+      {isSizeScreen ? (
+        <ParticlesBg type="cobweb" color="#ffbdbd" num="80" bg={true} />
+      ) : (
+        <ParticlesBg type="cobweb" color="#ffbdbd" num="20" bg={true} />
+      )}
       <div className="home-block1">
         <span id="home1">Bonjour,</span>
         <span id="home2"> je suis</span>

@@ -69,7 +69,7 @@ const App = () => {
           ) : null}
         </>
       )}
-      <Home />
+      <Home isSizeScreen={isSizeScreen} />
       <Profil />
       <Skills />
       <Project />
