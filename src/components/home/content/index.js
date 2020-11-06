@@ -1,5 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
+import ParticlesBg from "particles-bg";
 
 // Styling
 import "./index.css";
@@ -19,6 +20,7 @@ const HomeContent = () => {
 
   return (
     <section id="home" className="home-wrapper fs-title">
+      <ParticlesBg type="cobweb" color="#ffbdbd" num="80" bg={true} />
       <div className="home-block1">
         <span id="home1">Bonjour,</span>
         <span id="home2"> je suis</span>

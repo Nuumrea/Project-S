@@ -6,9 +6,13 @@ import LeKaba01 from "../../../assets/card/lekaba/lekaba01.png";
 import LeKaba02 from "../../../assets/card/lekaba/lekaba02.png";
 import LeKaba03 from "../../../assets/card/lekaba/lekaba03.png";
 import LeKaba04 from "../../../assets/card/lekaba/lekaba04.png";
-import LeKaba05 from "../../../assets/card/lekaba/lekaba05.png";
+import LogoTodo1 from "../../../assets/card/todo/logo01.png";
 import ToDo01 from "../../../assets/card/todo/todo01.png";
+import ToDo02 from "../../../assets/card/todo/todo02.png";
+import ToDo03 from "../../../assets/card/todo/todo03.png";
 import Vitrine01 from "../../../assets/card/vitrine/vitrine01.png";
+import Vitrine02 from "../../../assets/card/vitrine/vitrine02.png";
+import Vitrine03 from "../../../assets/card/vitrine/vitrine03.png";
 
 // Components
 import Card from "../card/index";
@@ -27,15 +31,9 @@ const Content = () => {
       setState: setDisplayModalKaba,
     },
     {
-      title: "Lekaba",
-      spec: "React js",
-      pic: LeKaba01,
-      setState: setDisplayModalKaba,
-    },
-    {
       title: "To do list",
       spec: "React js",
-      pic: ToDo01,
+      pic: LogoTodo1,
       setState: setDisplayModalTodo,
     },
     {
@@ -51,21 +49,22 @@ const Content = () => {
     description:
       "Le Kaba cherche, compare et sélectionne pour vous les meilleures alternatives éco-responsables à tous les gestes du quotidien.",
     link: "https://www.lekaba.fr/",
-    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04, LeKaba05],
+    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04],
     setState: setDisplayModalKaba,
   };
   const modalDataTodo = {
     title: "To do list",
-    description: "Simple to do list",
+    description: "Simple to-do liste pour un exercice lors de ma formation",
     link: "https://to-do-list-kevin.netlify.app/",
-    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04, LeKaba05],
+    pic: [ToDo01, ToDo02, ToDo03],
     setState: setDisplayModalTodo,
   };
   const modalDataVinyle = {
     title: "Vinyle",
-    description: "Simple site en HTML et CSS",
+    description:
+      "Mon premier site vitrine en HTML et CSS pour un exercice durant ma formation",
     link: "https://site-vitrine-vinyle.netlify.app/",
-    pic: [LeKaba01, LeKaba02, LeKaba03, LeKaba04, LeKaba05],
+    pic: [Vitrine01, Vitrine02, Vitrine03],
     setState: setDisplayModalVitrine,
   };
 
@@ -77,7 +76,6 @@ const Content = () => {
             <span>Project</span>
           </div>
         </div>
-        {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
         {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
         {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
         {displayModalVitrine ? <Modal data={modalDataVinyle} /> : null}

@@ -23,7 +23,7 @@ const MenuMobil = ({
   setIsContactSelect,
 }) => {
   useEffect(() => {
-    const onScrollMenu = () => {
+    const onScrollMenuMobil = () => {
       if (window.scrollY >= 0 && window.scrollY < 689) {
         setIsHomeSelect(true);
         setIsProfilSelect(false);
@@ -60,8 +60,8 @@ const MenuMobil = ({
         setIsHomeSelect(false);
       }
     };
-    onScrollMenu();
-    window.addEventListener("scroll", onScrollMenu);
+    onScrollMenuMobil();
+    window.addEventListener("scroll", onScrollMenuMobil);
   }, [
     setIsHomeSelect,
     setIsProfilSelect,
