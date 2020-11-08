@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+// Components
+
 // Assets and Styling
 import "./index.css";
-
-// Components
 
 const SkillsBar = ({ data }) => {
   const [isSkill75, setIsSkill75] = useState(false);

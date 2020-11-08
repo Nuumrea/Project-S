@@ -1,10 +1,10 @@
 import React from "react";
 
+// Components
+
 // Assets and Styling
 import "./index.css";
 import MyCv from "../../../assets/pdf/KEVINPARAYRECV.pdf";
-
-// Components
 
 const Download = () => {
   return (

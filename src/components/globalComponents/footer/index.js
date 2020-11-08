@@ -1,13 +1,13 @@
 import React from "react";
 
+// Components
+import SocialMedia from "../../globalComponents/socialMedia/index";
+
 // Styling
 import "./index.css";
 import Linkedin from "../../../assets/navBar/linkedin.png";
 import Instagram from "../../../assets/navBar/instagram.png";
 import Github from "../../../assets/navBar/github.png";
-
-// Components
-import SocialMedia from "../../globalComponents/socialMedia/index";
 
 const Footer = () => {
   const socialMediaData = [

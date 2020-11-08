@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Lottie from "react-lottie";
 import ParticlesBg from "particles-bg";
+
+// Components
+
+// Context
+import { SizeContext } from "../../../Contexts";
 
 // Styling
 import "./index.css";
 import ScrollDown from "../../../assets/animation/scrollDown.json";
 
-// Components
+const HomeContent = () => {
+  const SizeScreen = useContext(SizeContext);
 
-const HomeContent = ({ isSizeScreen }) => {
   const scrollOption = {
     loop: true,
     autoplay: true,
@@ -20,7 +25,7 @@ const HomeContent = ({ isSizeScreen }) => {
 
   return (
     <section id="home" className="home-wrapper">
-      {isSizeScreen ? (
+      {SizeScreen ? (
         <ParticlesBg type="cobweb" color="#ffbdbd" num="80" bg={true} />
       ) : (
         <ParticlesBg type="cobweb" color="#ffbdbd" num="20" bg={true} />

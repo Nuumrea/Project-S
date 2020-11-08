@@ -11,6 +11,9 @@ import Project from "./components/project/content/index";
 import Contact from "./components/contact/content/index";
 import Footer from "./components/globalComponents/footer/index";
 
+// Context
+import { SizeContext } from "./Contexts";
+
 // import Styling and Assets
 import "./App.css";
 
@@ -69,7 +72,9 @@ const App = () => {
           ) : null}
         </>
       )}
-      <Home isSizeScreen={isSizeScreen} />
+      <SizeContext.Provider value={isSizeScreen}>
+        <Home />
+      </SizeContext.Provider>
       <Profil />
       <Skills />
       <Project />

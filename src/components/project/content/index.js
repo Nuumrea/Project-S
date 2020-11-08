@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
-// Styling
-import "./index.css";
-import LeKaba01 from "../../../assets/card/lekaba/lekaba01.png";
-import LeKaba02 from "../../../assets/card/lekaba/lekaba02.png";
-import LeKaba03 from "../../../assets/card/lekaba/lekaba03.png";
-import LeKaba04 from "../../../assets/card/lekaba/lekaba04.png";
-import LogoTodo1 from "../../../assets/card/todo/logo01.png";
-import ToDo01 from "../../../assets/card/todo/todo01.png";
-import ToDo02 from "../../../assets/card/todo/todo02.png";
-import ToDo03 from "../../../assets/card/todo/todo03.png";
-import Vitrine01 from "../../../assets/card/vitrine/vitrine01.png";
-import Vitrine02 from "../../../assets/card/vitrine/vitrine02.png";
-import Vitrine03 from "../../../assets/card/vitrine/vitrine03.png";
-
 // Components
 import Card from "../card/index";
 import Modal from "../modal/index";
+
+// Styling
+import "./index.css";
+import LeKaba01 from "../../../assets/card/lekaba/lekaba01.jpg";
+import LeKaba02 from "../../../assets/card/lekaba/lekaba02.jpg";
+import LeKaba03 from "../../../assets/card/lekaba/lekaba03.jpg";
+import LeKaba04 from "../../../assets/card/lekaba/lekaba04.jpg";
+import LogoTodo1 from "../../../assets/card/todo/logo01.jpg";
+import ToDo01 from "../../../assets/card/todo/todo01.jpg";
+import ToDo02 from "../../../assets/card/todo/todo02.jpg";
+import ToDo03 from "../../../assets/card/todo/todo03.jpg";
+import Vitrine01 from "../../../assets/card/vitrine/vitrine01.jpg";
+import Vitrine02 from "../../../assets/card/vitrine/vitrine02.jpg";
+import Vitrine03 from "../../../assets/card/vitrine/vitrine03.jpg";
 
 const Content = () => {
   const [displayModalKaba, setDisplayModalKaba] = useState(false);

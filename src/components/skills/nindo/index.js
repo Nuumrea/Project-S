@@ -1,9 +1,9 @@
 import React from "react";
 
+// Components
+
 // Assets and Styling
 import "./index.css";
-
-// Components
 
 const Content = ({ data }) => {
   return (

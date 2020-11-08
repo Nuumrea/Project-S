@@ -2,11 +2,11 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
+// Components
+
 // Styling
 import "./index.css";
 import Close from "../../../assets/png/close.png";
-
-// Components
 
 const Modal = ({ data }) => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 
-// Styling
-import "./index.css";
-
 // Components
 import Forms from "../forms/index";
+
+// Styling
+import "./index.css";
 
 const Contact = () => {
   return (

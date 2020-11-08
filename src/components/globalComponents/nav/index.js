@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 // Components
 import SocialMedia from "../socialMedia/index";
 
+// Context
+
 // Assets and Styling
 import "./index.css";
 import HomeWhite from "../../../assets/navBar/homeWhite.png";

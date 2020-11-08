@@ -1,9 +1,9 @@
 import React from "react";
 
+// Components
+
 // Styling
 import "./index.css";
-
-// Components
 
 const Card = ({ data }) => {
   return (

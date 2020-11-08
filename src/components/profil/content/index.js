@@ -1,10 +1,10 @@
 import React from "react";
 
-// Assets and Styling
-import "./index.css";
-
 // Components
 import Download from "../../globalComponents/download/index";
+
+// Assets and Styling
+import "./index.css";
 
 const ProfilContent = () => {
   return (

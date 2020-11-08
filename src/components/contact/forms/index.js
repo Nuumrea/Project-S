@@ -3,12 +3,12 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Lottie from "react-lottie";
 
+// Components
+
 // Styling
 import "./index.css";
 import Validate from "../../../assets/animation/Validate.json";
 import Wrong from "../../../assets/animation/wrong.json";
-
-// Components
 
 const Contact = () => {
   const { handleSubmit, register, errors } = useForm();

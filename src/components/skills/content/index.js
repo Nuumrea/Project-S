@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import SkillsBar from "../skillsBar/index.js";
 import Nindo from "../nindo/index.js";
+
 // Assets and Styling
 import "./index.css";
 import Clock from "../../../assets/png/clock.png";
