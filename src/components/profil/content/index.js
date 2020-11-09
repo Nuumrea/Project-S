@@ -33,10 +33,10 @@ const ProfilContent = () => {
             tout en restant efficace par son rythme de travail.
             <br />
             <br />
-            La formation intensive du Reacteur m’a permis d’intégrer les
-            concepts de la programmation Javascript et de confirmer mon désir de
-            monter en compétences dans le domaine du développement au sein d’une
-            entreprise.
+            Suite à la formation du Reacteur, J'ai accomplis un stage de 6 mois
+            dans une start up à Station F. Je suis maintenant à la recherche
+            d'un premier poste en tant que développeur front junior, tout en
+            continuant de me former sur TypeScript et Redux.
           </p>
         </div>
         <Download />

@@ -76,11 +76,11 @@
   cursor: pointer;
   font-size: 1rem;
   transition: 0.5s ease-in-out;
-  border: 1px solid #ffbdbd;
+  border: 1px solid #fbf7f5;
 }
 .modal-button > a {
   text-decoration: none;
-  color: #ffbdbd;
+  color: #fbf7f5;
 }
 .modal-close {
   width: 20px;

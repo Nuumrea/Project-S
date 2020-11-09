@@ -36,9 +36,9 @@
   outline: none;
   cursor: pointer;
   font-family: Bahnschrift;
-  color: #ffbdbd;
+  color: #fbf7f5;
   background-color: #232b2b;
-  border: 1px solid #ffbdbd;
+  border: 1px solid #fbf7f5;
   transition: all 0.5s;
   font-size: 1rem;
 }
