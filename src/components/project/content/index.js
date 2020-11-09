@@ -54,8 +54,9 @@ const Content = () => {
   };
   const modalDataTodo = {
     title: "To do list",
-    description: "Simple to-do liste pour un exercice lors de ma formation",
-    link: "https://to-do-list-kevin.netlify.app/",
+    description:
+      "Simple to-do liste dans le cadre d'un exercice pour débuter en TypeScript",
+    link: "https://todo-ts.netlify.app/",
     pic: [ToDo01, ToDo02, ToDo03],
     setState: setDisplayModalTodo,
   };
