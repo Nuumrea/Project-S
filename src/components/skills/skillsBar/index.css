@@ -11,14 +11,20 @@
   height: 100%;
   border-radius: 25px;
 }
-.skillsBar-width-75 {
+
+#skillsBar75 {
   width: 75%;
   border-radius: 20px;
 }
-.skillsBar-width-85 {
+#skillsBar85 {
   width: 85%;
   border-radius: 20px;
 }
+#skillsBar90 {
+  width: 90%;
+  border-radius: 20px;
+}
+
 .skillsBar-title {
   display: flex;
   justify-content: center;

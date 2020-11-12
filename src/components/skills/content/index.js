@@ -16,18 +16,22 @@ const Skills = ({ data }) => {
     {
       title: "React",
       percent: "75%",
+      id: "skillsBar75",
     },
     {
       title: "HTML",
-      percent: "85%",
+      percent: "90%",
+      id: "skillsBar90",
     },
     {
       title: "CSS",
       percent: "85%",
+      id: "skillsBar85",
     },
     {
       title: "JavaScript",
       percent: "75%",
+      id: "skillsBar75",
     },
   ];
 

@@ -11,7 +11,7 @@
   height: 100%;
   transition: 0.5s ease;
   backface-visibility: hidden;
-  object-fit: fill;
+  object-fit: cover;
 }
 .card-container:hover .card-img {
   opacity: 0.2;

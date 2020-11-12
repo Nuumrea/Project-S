@@ -29,37 +29,38 @@ const NavBar = ({
   isContactSelect,
   setIsContactSelect,
 }) => {
+  let scrollPosition = Math.round(window.scrollY);
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY <= 676) {
+      if (scrollPosition < 676) {
         setIsHomeSelect(true);
         setIsProfilSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 676 && window.scrollY < 1365) {
+      if (scrollPosition >= 676 && scrollPosition < 1365) {
         setIsProfilSelect(true);
         setIsHomeSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 1365 && window.scrollY < 2054) {
+      if (scrollPosition >= 1365 && scrollPosition < 2054) {
         setIsSkillsSelect(true);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2054 && window.scrollY < 2743) {
+      if (scrollPosition >= 2054 && scrollPosition < 2743) {
         setIsProjectSelect(true);
         setIsSkillsSelect(false);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2743) {
+      if (scrollPosition >= 2743) {
         setIsContactSelect(true);
         setIsProjectSelect(false);
         setIsSkillsSelect(false);
@@ -75,6 +76,7 @@ const NavBar = ({
     setIsSkillsSelect,
     setIsProjectSelect,
     setIsContactSelect,
+    scrollPosition,
   ]);
 
   const socialMediaData = [

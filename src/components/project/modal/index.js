@@ -19,7 +19,14 @@ const Modal = ({ data }) => {
           showIndicators={false}
         >
           {data.pic.map((data, index) => {
-            return <img className="modal-img" src={data} alt="background" />;
+            return (
+              <img
+                key={index}
+                className="modal-img"
+                src={data}
+                alt="background"
+              />
+            );
           })}
         </Carousel>
         <div className="modal-info-container">
