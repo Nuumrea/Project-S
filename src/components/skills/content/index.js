@@ -40,7 +40,7 @@ const Skills = ({ data }) => {
       img: Clock,
       title: "Rapide",
       description:
-        "Des temps de chargement rapides et sans lag, sont ma prioritées absolue.",
+        "Des temps de chargement rapides et sans lag, sont ma prioritée absolue.",
     },
     {
       img: Responsive,

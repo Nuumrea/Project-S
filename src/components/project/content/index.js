@@ -55,7 +55,7 @@ const Content = () => {
   const modalDataTodo = {
     title: "To do list",
     description:
-      "Simple to-do liste dans le cadre d'un exercice pour débuter en TypeScript",
+      "Simple to-do liste dans le cadre d'un exercice pour débuter en TypeScript.",
     link: "https://todo-ts.netlify.app/",
     pic: [ToDo01, ToDo02, ToDo03],
     setState: setDisplayModalTodo,
@@ -63,7 +63,7 @@ const Content = () => {
   const modalDataVinyle = {
     title: "Vinyle",
     description:
-      "Mon premier site vitrine en HTML et CSS pour un exercice durant ma formation",
+      "Mon premier site vitrine en HTML et CSS pour un exercice durant ma formation.",
     link: "https://site-vitrine-vinyle.netlify.app/",
     pic: [Vitrine01, Vitrine02, Vitrine03],
     setState: setDisplayModalVitrine,

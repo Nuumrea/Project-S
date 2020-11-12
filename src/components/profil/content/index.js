@@ -25,7 +25,7 @@ const ProfilContent = () => {
         <div className="profil-description fs-text">
           <p>
             Jeune homme de 30 ans ayant décidé, après avoir été sous-chef dans
-            des restaurants bistronomique, de me reconvertir dans le domaine du
+            des restaurants bistronomiques, de me reconvertir dans le domaine du
             développement Web et Mobile.
             <br />
             <br />
@@ -33,7 +33,7 @@ const ProfilContent = () => {
             tout en restant efficace par son rythme de travail.
             <br />
             <br />
-            Suite à la formation du Reacteur, J'ai accomplis un stage de 6 mois
+            Suite à la formation du Reacteur, J'ai accompli un stage de 6 mois
             dans une start up à Station F. Je suis maintenant à la recherche
             d'un premier poste en tant que développeur front junior, tout en
             continuant de me former sur TypeScript et Redux.
