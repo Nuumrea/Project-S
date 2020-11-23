@@ -6,7 +6,8 @@
 
 /* Global Rules */
 body {
-  background-color: #232b2b;
+  /* background-color: #232b2b; */
+  background-color: #181818;
   font-family: Bahnschrift;
   color: #fbf7f5;
 }
@@ -27,7 +28,7 @@ body {
   background-color: #0e1111;
 }
 .bg-medium-black {
-  background-color: #232b2b;
+  background-color: #181818;
 }
 .bg-light-black {
   background-color: #353839;

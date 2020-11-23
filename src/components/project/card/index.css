@@ -1,7 +1,7 @@
 .card-container {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 175px;
   margin: 0 0 10px 0;
 }
 .card-img {
@@ -48,11 +48,26 @@
   height: 34px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  border: 1px solid white;
 }
+.card-button > span {
+  margin: 0 20px;
+}
+.card-button:hover {
+  border: 1px solid pink;
+  color: pink;
+}
+
 @media (min-width: 768px) {
   .card-container {
     width: 48%;
     height: 250px;
     margin: 1%;
+  }
+}
+@media (min-width: 1200px) {
+  .card-container {
+    width: 390px;
+    height: 300px;
   }
 }

@@ -32,7 +32,7 @@ const NavBar = ({
   let scrollPosition = Math.round(window.scrollY);
   useEffect(() => {
     const onScrollMenu = () => {
-      if (scrollPosition < 676) {
+      if (scrollPosition > 0 && scrollPosition < 676) {
         setIsHomeSelect(true);
         setIsProfilSelect(false);
         setIsSkillsSelect(false);

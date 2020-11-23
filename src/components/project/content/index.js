@@ -26,19 +26,19 @@ const Content = () => {
   const cardData = [
     {
       title: "Lekaba",
-      spec: "React js",
+      spec: "React/Javascript",
       pic: LeKaba01,
       setState: setDisplayModalKaba,
     },
     {
       title: "To do list",
-      spec: "React js",
+      spec: "React/TypeScript",
       pic: LogoTodo1,
       setState: setDisplayModalTodo,
     },
     {
       title: "Vinyle",
-      spec: "HTML, CSS",
+      spec: "HTML/CSS",
       pic: Vitrine01,
       setState: setDisplayModalVitrine,
     },

@@ -6,7 +6,7 @@
   width: 100%;
 }
 .project-wrapper > div {
-  width: 90%;
+  width: 95%;
   max-width: 320px;
 }
 .project-title {
@@ -44,6 +44,6 @@
 }
 @media (min-width: 1200px) {
   .project-wrapper > div {
-    max-width: 800px;
+    max-width: 900px;
   }
 }

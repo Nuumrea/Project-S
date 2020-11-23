@@ -22,37 +22,38 @@ const MenuMobil = ({
   isContactSelect,
   setIsContactSelect,
 }) => {
+  let scrollPosition = Math.round(window.scrollY);
   useEffect(() => {
     const onScrollMenuMobil = () => {
-      if (window.scrollY >= 0 && window.scrollY < 689) {
+      if (scrollPosition >= 0 && scrollPosition < 676) {
         setIsHomeSelect(true);
         setIsProfilSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 689 && window.scrollY < 1378) {
+      if (scrollPosition >= 676 && scrollPosition < 1365) {
         setIsProfilSelect(true);
         setIsHomeSelect(false);
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 1378 && window.scrollY < 2067) {
+      if (scrollPosition >= 1365 && scrollPosition < 1977) {
         setIsSkillsSelect(true);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2067 && window.scrollY < 2257) {
+      if (scrollPosition >= 1977 && scrollPosition < 2743) {
         setIsProjectSelect(true);
         setIsSkillsSelect(false);
         setIsProfilSelect(false);
         setIsHomeSelect(false);
         setIsContactSelect(false);
       }
-      if (window.scrollY >= 2257) {
+      if (scrollPosition >= 2743) {
         setIsContactSelect(true);
         setIsProjectSelect(false);
         setIsSkillsSelect(false);
@@ -68,6 +69,7 @@ const MenuMobil = ({
     setIsSkillsSelect,
     setIsProjectSelect,
     setIsContactSelect,
+    scrollPosition,
   ]);
 
   return (
