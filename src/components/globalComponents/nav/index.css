@@ -4,7 +4,7 @@
   }
   .navBar-wrapper {
     height: 100vh;
-    width: 10%;
+    width: 75px;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -87,6 +87,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .navBar-wrapper {
+    width: 120px;
+  }
   .navBar-k {
     height: 150px;
   }

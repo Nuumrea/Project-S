@@ -33,41 +33,43 @@ const NavBar = ({
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY < 676) {
-        setIsHomeSelect(true);
-        setIsProfilSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 676 && window.scrollY < 1365) {
-        setIsProfilSelect(true);
-        setIsHomeSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-        setIsNav(true);
-      }
-      if (window.scrollY >= 1365 && window.scrollY < 2054) {
-        setIsSkillsSelect(true);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 2054 && window.scrollY < 2743) {
-        setIsProjectSelect(true);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 2743) {
-        setIsContactSelect(true);
-        setIsProjectSelect(false);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
+      if (window.innerWidth >= 768) {
+        if (window.scrollY < 676) {
+          setIsHomeSelect(true);
+          setIsProfilSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY >= 676 && window.scrollY < 1365) {
+          setIsProfilSelect(true);
+          setIsHomeSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+          setIsNav(true);
+        }
+        if (window.scrollY >= 1365 && window.scrollY < 2054) {
+          setIsSkillsSelect(true);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY >= 2054 && window.scrollY < 2796) {
+          setIsProjectSelect(true);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY >= 2796) {
+          setIsContactSelect(true);
+          setIsProjectSelect(false);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+        }
       }
     };
     onScrollMenu();
@@ -80,6 +82,8 @@ const NavBar = ({
     setIsContactSelect,
     setIsNav,
   ]);
+
+  // 3784
 
   const socialMediaData = [
     {

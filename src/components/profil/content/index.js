@@ -25,7 +25,7 @@ const ProfilContent = () => {
     <section id="profil" className="profil-wrapper">
       <div>
         <div
-          id={isTitleProfil ? "slidein-true" : "slidein-false"}
+          id={isTitleProfil ? "slide-right" : "slide-false"}
           className="profil-title fs-title"
         >
           <div>
@@ -40,7 +40,7 @@ const ProfilContent = () => {
           <span id={isTitleProfil ? "profil5" : "profil-false"}> ?</span>
         </div>
         <div
-          id={isTitleProfil ? "slide-bottom" : "slidein-false"}
+          id={isTitleProfil ? "slide-bottom" : "slide-false"}
           className="profil-description fs-text"
         >
           <p>

@@ -100,7 +100,7 @@ const Contact = ({ isContentContact }) => {
 
   return (
     <form
-      id={isContentContact ? "slide-left" : "slidein-false"}
+      id={isContentContact ? "slide-left" : "slide-false"}
       className="forms-wrapper"
       onSubmit={handleSubmit(onSubmit)}
     >

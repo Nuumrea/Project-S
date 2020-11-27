@@ -12,7 +12,7 @@ const Contact = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2743) {
+      if (window.scrollY >= 2796) {
         setIsTitleContact(true);
         setIsContentContact(true);
       }
@@ -25,7 +25,7 @@ const Contact = () => {
     <section id="contact" className="contact-wrapper">
       <div>
         <div
-          id={isTitleContact ? "slidein-true" : "slidein-false"}
+          id={isTitleContact ? "slide-right" : "slide-false"}
           className="contact-title fs-title"
         >
           <div>

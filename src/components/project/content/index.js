@@ -28,7 +28,7 @@ const Content = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2054 && window.scrollY < 2743) {
+      if (window.scrollY >= 2054 && window.scrollY < 3064) {
         setIsTitleProject(true);
       }
     };
@@ -86,7 +86,7 @@ const Content = () => {
     <section id="project" className="project-wrapper">
       <div>
         <div
-          id={isTitleProject ? "slidein-true" : "slidein-false"}
+          id={isTitleProject ? "slide-right" : "slide-false"}
           className="project-title fs-title"
         >
           <div>
@@ -97,7 +97,7 @@ const Content = () => {
         {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
         {displayModalVitrine ? <Modal data={modalDataVinyle} /> : null}
         <div
-          id={isTitleProject ? "slide-bottom" : "slidein-false"}
+          id={isTitleProject ? "slide-bottom" : "slide-false"}
           className="project-card-container"
         >
           {cardData.map((data, index) => {

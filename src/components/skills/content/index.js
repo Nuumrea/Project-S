@@ -26,7 +26,7 @@ const Skills = ({ data }) => {
     <section id="skills" className="skills-wrapper">
       <div>
         <div
-          id={isTitleSkills ? "slidein-true" : "slidein-false"}
+          id={isTitleSkills ? "slide-right" : "slide-false"}
           className="skills-title fs-title"
         >
           <div>
@@ -34,14 +34,14 @@ const Skills = ({ data }) => {
           </div>
         </div>
         <div
-          id={isTitleSkills ? "slide-left" : "slidein-false"}
+          id={isTitleSkills ? "slide-left" : "slide-false"}
           className="skills-nindo-container"
         >
           {NindoData.map((data, index) => {
             return <Nindo data={data} key={index} />;
           })}
         </div>
-        <div id={isTitleSkills ? "slide-left" : "slidein-false"}>
+        <div id={isTitleSkills ? "slide-left" : "slide-false"}>
           {SkillsData.map((data, index) => {
             return <SkillsBar data={data} key={index} />;
           })}
