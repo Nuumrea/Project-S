@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
 import SocialMedia from "../socialMedia/index";
@@ -29,6 +29,8 @@ const NavBar = ({
   isContactSelect,
   setIsContactSelect,
 }) => {
+  const [isNav, setIsNav] = useState(false);
+
   useEffect(() => {
     const onScrollMenu = () => {
       if (window.scrollY < 676) {
@@ -44,6 +46,7 @@ const NavBar = ({
         setIsSkillsSelect(false);
         setIsProjectSelect(false);
         setIsContactSelect(false);
+        setIsNav(true);
       }
       if (window.scrollY >= 1365 && window.scrollY < 2054) {
         setIsSkillsSelect(true);
@@ -75,6 +78,7 @@ const NavBar = ({
     setIsSkillsSelect,
     setIsProjectSelect,
     setIsContactSelect,
+    setIsNav,
   ]);
 
   const socialMediaData = [
@@ -93,7 +97,10 @@ const NavBar = ({
   ];
 
   return (
-    <header className="navBar-wrapper bg-light-black">
+    <header
+      className={isNav ? "navBar-wrapper bg-light-black" : "navBar-home"}
+      id="displayNav"
+    >
       <div className="navBar-k bg-black">
         <div>
           <img src={K} alt="icon" />

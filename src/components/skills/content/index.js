@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
 import SkillsBar from "../skillsBar/index.js";
@@ -10,30 +10,20 @@ import Clock from "../../../assets/png/clock.png";
 import Light from "../../../assets/png/lightbulb.png";
 import Responsive from "../../../assets/png/responsive.png";
 import Ship from "../../../assets/png/rocket.png";
+import SkillsData from "../../../assets/data/SkillsData";
 
 const Skills = ({ data }) => {
-  let skillsData = [
-    {
-      title: "React",
-      percent: "75%",
-      id: "skillsBar75",
-    },
-    {
-      title: "HTML",
-      percent: "90%",
-      id: "skillsBar90",
-    },
-    {
-      title: "CSS",
-      percent: "85%",
-      id: "skillsBar85",
-    },
-    {
-      title: "JavaScript",
-      percent: "75%",
-      id: "skillsBar75",
-    },
-  ];
+  const [isTitleSkills, setIsTitleSkills] = useState(false);
+
+  useEffect(() => {
+    const onScrollMenu = () => {
+      if (window.scrollY >= 1365 && window.scrollY < 2054) {
+        setIsTitleSkills(true);
+      }
+    };
+    onScrollMenu();
+    window.addEventListener("scroll", onScrollMenu);
+  }, [setIsTitleSkills]);
 
   let dataNindo = [
     {
@@ -63,7 +53,10 @@ const Skills = ({ data }) => {
   return (
     <section id="skills" className="skills-wrapper">
       <div>
-        <div className="skills-title fs-title">
+        <div
+          id={isTitleSkills ? "slidein-true" : "slidein-false"}
+          className="skills-title fs-title"
+        >
           <div>
             <span>Compétences</span>
           </div>
@@ -74,7 +67,7 @@ const Skills = ({ data }) => {
           })}
         </div>
         <div>
-          {skillsData.map((data, index) => {
+          {SkillsData.map((data, index) => {
             return <SkillsBar data={data} key={index} />;
           })}
         </div>

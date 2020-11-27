@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+  .navBar-home {
+    display: none;
+  }
   .navBar-wrapper {
     height: 100vh;
     width: 10%;
@@ -6,6 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #displayNav {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-timing-function: linear;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
   }
   .navBar-k {
     display: flex;

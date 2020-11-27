@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Components
 import Card from "../card/index";
 import Modal from "../modal/index";
+
+// Contexts
 
 // Styling
 import "./index.css";
@@ -22,6 +24,17 @@ const Content = () => {
   const [displayModalKaba, setDisplayModalKaba] = useState(false);
   const [displayModalTodo, setDisplayModalTodo] = useState(false);
   const [displayModalVitrine, setDisplayModalVitrine] = useState(false);
+  const [isTitleProject, setIsTitleProject] = useState(false);
+
+  useEffect(() => {
+    const onScrollMenu = () => {
+      if (window.scrollY >= 2054 && window.scrollY < 2743) {
+        setIsTitleProject(true);
+      }
+    };
+    onScrollMenu();
+    window.addEventListener("scroll", onScrollMenu);
+  }, [setIsTitleProject]);
 
   const cardData = [
     {
@@ -72,7 +85,10 @@ const Content = () => {
   return (
     <section id="project" className="project-wrapper">
       <div>
-        <div className="project-title fs-title">
+        <div
+          id={isTitleProject ? "slidein-true" : "slidein-false"}
+          className="project-title fs-title"
+        >
           <div>
             <span>Project</span>
           </div>

@@ -59,6 +59,7 @@ body {
   font-size: 0.7rem;
   font-weight: bolder;
 }
+
 @media (min-width: 768px) {
   .fs-title {
     font-size: 2rem;
@@ -71,6 +72,35 @@ body {
   }
   .fs-text {
     font-size: 1rem;
+  }
+  /* Animation */
+  #slidein-false {
+    opacity: 0;
+  }
+  #slidein-true {
+    animation-duration: 1s;
+    animation-name: slidein;
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: 1s;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1200px) {

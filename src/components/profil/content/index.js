@@ -1,26 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // Components
 import Download from "../../globalComponents/download/index";
+
+// Context
 
 // Assets and Styling
 import "./index.css";
 
 const ProfilContent = () => {
+  const [isTitleProfil, setIsTitleProfil] = useState(false);
+
+  useEffect(() => {
+    const onScrollMenu = () => {
+      if (window.scrollY >= 676 && window.scrollY < 1365) {
+        setIsTitleProfil(true);
+      }
+    };
+    onScrollMenu();
+    window.addEventListener("scroll", onScrollMenu);
+  }, [setIsTitleProfil]);
+
   return (
     <section id="profil" className="profil-wrapper">
       <div>
-        <div className="profil-title fs-title">
+        <div
+          id={isTitleProfil ? "slidein-true" : "slidein-false"}
+          className="profil-title fs-title"
+        >
           <div>
             <span>Profil</span>
           </div>
         </div>
         <div className="profil-subtitle fs-title pink">
-          <span id="profil1">Qui</span>
-          <span id="profil2"> suis</span>
-          <span id="profil3">-</span>
-          <span id="profil4">je</span>
-          <span id="profil5"> ?</span>
+          <span id={isTitleProfil ? "profil1" : "profil-false"}>Qui</span>
+          <span id={isTitleProfil ? "profil2" : "profil-false"}> suis</span>
+          <span id={isTitleProfil ? "profil3" : "profil-false"}>-</span>
+          <span id={isTitleProfil ? "profil4" : "profil-false"}>je</span>
+          <span id={isTitleProfil ? "profil5" : "profil-false"}> ?</span>
         </div>
         <div className="profil-description fs-text">
           <p>
