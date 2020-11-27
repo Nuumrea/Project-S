@@ -33,12 +33,15 @@ const Skills = ({ data }) => {
             <span>Compétences</span>
           </div>
         </div>
-        <div className="skills-nindo-container">
+        <div
+          id={isTitleSkills ? "slide-left" : "slidein-false"}
+          className="skills-nindo-container"
+        >
           {NindoData.map((data, index) => {
             return <Nindo data={data} key={index} />;
           })}
         </div>
-        <div>
+        <div id={isTitleSkills ? "slide-left" : "slidein-false"}>
           {SkillsData.map((data, index) => {
             return <SkillsBar data={data} key={index} />;
           })}

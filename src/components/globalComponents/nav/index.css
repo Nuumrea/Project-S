@@ -9,14 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #displayNav {
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    -webkit-timing-function: linear;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    z-index: 1;
   }
   .navBar-k {
     display: flex;
@@ -68,8 +61,31 @@
     width: 100%;
     height: auto;
   }
+  #displayNav {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-timing-function: linear;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
-
 @media (min-width: 1024px) {
   .navBar-k {
     height: 150px;

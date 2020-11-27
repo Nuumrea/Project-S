@@ -18,5 +18,10 @@
     "title": "JavaScript",
     "percent": "75%",
     "id": "skillsBar75"
+  },
+  {
+    "title": "TypeScript",
+    "percent": "50%",
+    "id": "skillsBar50"
   }
 ]

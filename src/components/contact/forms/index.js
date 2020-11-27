@@ -10,7 +10,7 @@ import "./index.css";
 import Validate from "../../../assets/animation/Validate.json";
 import Wrong from "../../../assets/animation/wrong.json";
 
-const Contact = () => {
+const Contact = ({ isContentContact }) => {
   const { handleSubmit, register, errors } = useForm();
   const [isStatus, setIsStatus] = useState("");
   const [handleName, setHandleName] = useState("");
@@ -97,8 +97,13 @@ const Contact = () => {
       }, 10000);
     }
   };
+
   return (
-    <form className="forms-wrapper" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      id={isContentContact ? "slide-left" : "slidein-false"}
+      className="forms-wrapper"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div>
         <input
           type="text"

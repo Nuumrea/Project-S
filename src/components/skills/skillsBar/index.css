@@ -11,7 +11,10 @@
   height: 100%;
   border-radius: 25px;
 }
-
+#skillsBar50 {
+  width: 50%;
+  border-radius: 20px;
+}
 #skillsBar75 {
   width: 75%;
   border-radius: 20px;

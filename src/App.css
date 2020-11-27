@@ -6,7 +6,6 @@
 
 /* Global Rules */
 body {
-  /* background-color: #232b2b; */
   background-color: #181818;
   font-family: Bahnschrift;
   color: #fbf7f5;
@@ -73,7 +72,25 @@ body {
   .fs-text {
     font-size: 1rem;
   }
+}
+@media (min-width: 1200px) {
+  .fs-title {
+    font-size: 2.5rem;
+  }
+  .fs-subtitle {
+    font-size: 1.8rem;
+  }
+  .fs-button {
+    font-size: 1.2rem;
+  }
+  .fs-text {
+    font-size: 1.2rem;
+  }
+  .fs-menu {
+    font-size: 1rem;
+  }
   /* Animation */
+  /* title */
   #slidein-false {
     opacity: 0;
   }
@@ -94,29 +111,21 @@ body {
       width: 100%;
     }
   }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
+  /* content */
+  #slide-left {
+    animation: slide-left 1s ease-in-out;
+  }
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-1000px);
     }
-    to {
-      opacity: 1;
+  }
+  #slide-bottom {
+    animation: slide-bottom 1s ease-in-out;
+  }
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(500px);
     }
-  }
-}
-@media (min-width: 1200px) {
-  .fs-title {
-    font-size: 2.5rem;
-  }
-  .fs-subtitle {
-    font-size: 1.8rem;
-  }
-  .fs-button {
-    font-size: 1.2rem;
-  }
-  .fs-text {
-    font-size: 1.2rem;
-  }
-  .fs-menu {
-    font-size: 1rem;
   }
 }

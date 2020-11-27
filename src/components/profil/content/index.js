@@ -39,7 +39,10 @@ const ProfilContent = () => {
           <span id={isTitleProfil ? "profil4" : "profil-false"}>je</span>
           <span id={isTitleProfil ? "profil5" : "profil-false"}> ?</span>
         </div>
-        <div className="profil-description fs-text">
+        <div
+          id={isTitleProfil ? "slide-bottom" : "slidein-false"}
+          className="profil-description fs-text"
+        >
           <p>
             Jeune homme de 30 ans ayant décidé, après avoir été sous-chef dans
             des restaurants bistronomiques, de me reconvertir dans le domaine du
@@ -54,9 +57,11 @@ const ProfilContent = () => {
             dans une start up à Station F. Je suis maintenant à la recherche
             d'un premier poste en tant que développeur front junior, tout en
             continuant de me former sur TypeScript et Redux.
+            <br />
+            <br />
           </p>
+          <Download />
         </div>
-        <Download />
       </div>
     </section>
   );

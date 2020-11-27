@@ -96,7 +96,10 @@ const Content = () => {
         {displayModalKaba ? <Modal data={modalDataKaba} /> : null}
         {displayModalTodo ? <Modal data={modalDataTodo} /> : null}
         {displayModalVitrine ? <Modal data={modalDataVinyle} /> : null}
-        <div className="project-card-container">
+        <div
+          id={isTitleProject ? "slide-bottom" : "slidein-false"}
+          className="project-card-container"
+        >
           {cardData.map((data, index) => {
             return <Card data={data} key={index} />;
           })}

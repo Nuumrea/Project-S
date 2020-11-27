@@ -8,16 +8,18 @@ import "./index.css";
 
 const Contact = () => {
   const [isTitleContact, setIsTitleContact] = useState(false);
+  const [isContentContact, setIsContentContact] = useState(false);
 
   useEffect(() => {
     const onScrollMenu = () => {
       if (window.scrollY >= 2743) {
         setIsTitleContact(true);
+        setIsContentContact(true);
       }
     };
     onScrollMenu();
     window.addEventListener("scroll", onScrollMenu);
-  }, [setIsTitleContact]);
+  }, [setIsTitleContact, setIsContentContact]);
 
   return (
     <section id="contact" className="contact-wrapper">
@@ -49,7 +51,7 @@ const Contact = () => {
           </span>
           <span id={isTitleContact ? "contact6" : "contact6-false"}> ?</span>
         </div>
-        <Forms />
+        <Forms isContentContact={isContentContact} />
       </div>
     </section>
   );
