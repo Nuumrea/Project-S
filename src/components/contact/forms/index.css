@@ -37,10 +37,15 @@
   cursor: pointer;
   font-family: Bahnschrift;
   color: #fbf7f5;
-  background-color: #232b2b;
+  background-color: #181818;
   border: 1px solid #fbf7f5;
   transition: all 0.5s;
   font-size: 1rem;
+}
+.form-submit > div > input:hover {
+  background-color: #ffbdbd;
+  border: 1px solid #181818;
+  color: #181818;
 }
 .message-wrapper {
   display: flex;

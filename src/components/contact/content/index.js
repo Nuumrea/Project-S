@@ -12,9 +12,16 @@ const Contact = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2710) {
-        setIsTitleContact(true);
-        setIsContentContact(true);
+      if (window.innerWidth >= 768 && window.innerWidth < 1900) {
+        if (window.scrollY >= 2710) {
+          setIsTitleContact(true);
+          setIsContentContact(true);
+        }
+      } else if (window.innerWidth >= 1900) {
+        if (window.scrollY >= 3790) {
+          setIsTitleContact(true);
+          setIsContentContact(true);
+        }
       }
     };
     onScrollMenu();

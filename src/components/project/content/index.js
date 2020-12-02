@@ -28,8 +28,14 @@ const Content = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2030 && window.scrollY < 2710) {
-        setIsTitleProject(true);
+      if (window.innerWidth >= 768 && window.innerWidth < 1900) {
+        if (window.scrollY >= 2030 && window.scrollY < 2710) {
+          setIsTitleProject(true);
+        }
+      } else if (window.innerWidth >= 1900) {
+        if (window.scrollY >= 2800 && window.scrollY < 3790) {
+          setIsTitleProject(true);
+        }
       }
     };
     onScrollMenu();

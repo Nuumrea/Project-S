@@ -72,15 +72,22 @@
   align-items: center;
   width: 150px;
   height: 30px;
-  background-color: #232b2b;
+  background-color: #181818;
   cursor: pointer;
   font-size: 1rem;
   transition: 0.5s ease-in-out;
   border: 1px solid #fbf7f5;
 }
+.modal-button:hover {
+  background-color: #ffbdbd;
+  border: 1px solid #181818;
+}
 .modal-button > a {
   text-decoration: none;
   color: #fbf7f5;
+}
+.modal-button:hover > a {
+  color: #181818;
 }
 .modal-close {
   width: 20px;

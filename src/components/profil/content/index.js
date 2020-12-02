@@ -13,8 +13,14 @@ const ProfilContent = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 675 && window.scrollY < 1330) {
-        setIsTitleProfil(true);
+      if (window.innerWidth >= 768 && window.innerWidth < 1900) {
+        if (window.scrollY >= 675 && window.scrollY < 1330) {
+          setIsTitleProfil(true);
+        }
+      } else if (window.innerWidth >= 1900) {
+        if (window.scrollY >= 1000 && window.scrollY < 1900) {
+          setIsTitleProfil(true);
+        }
       }
     };
     onScrollMenu();

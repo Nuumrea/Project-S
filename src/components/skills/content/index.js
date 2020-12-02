@@ -14,8 +14,14 @@ const Skills = ({ data }) => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 1330 && window.scrollY < 2030) {
-        setIsTitleSkills(true);
+      if (window.innerWidth >= 768 && window.innerWidth < 1900) {
+        if (window.scrollY >= 1330 && window.scrollY < 2030) {
+          setIsTitleSkills(true);
+        }
+      } else if (window.innerWidth >= 1900) {
+        if (window.scrollY >= 1900 && window.scrollY < 2800) {
+          setIsTitleSkills(true);
+        }
       }
     };
     onScrollMenu();

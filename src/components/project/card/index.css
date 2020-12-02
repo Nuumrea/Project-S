@@ -49,9 +49,17 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
   border: 1px solid white;
+  background-color: #181818;
+}
+.card-button:hover {
+  background-color: #ffbdbd;
+  border: 1px solid #181818;
 }
 .card-button > span {
   margin: 0 20px;
+}
+.card-button:hover > span {
+  color: #181818;
 }
 .card-button:hover {
   border: 1px solid pink;
