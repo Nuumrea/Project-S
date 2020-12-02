@@ -96,7 +96,7 @@ const App = () => {
           setIsProfilSelect(false);
           setIsHomeSelect(false);
         }
-      } else if (window.innerWidth >= 1940) {
+      } else if (window.innerWidth >= 1900) {
         if (window.scrollY < desktopScroll[0]) {
           setIsHomeSelect(true);
           setIsProfilSelect(false);
