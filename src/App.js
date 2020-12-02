@@ -51,7 +51,7 @@ const App = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.innerWidth >= 768 && window.innerWidth < 1940) {
+      if (window.innerWidth >= 768 && window.innerWidth < 1900) {
         if (window.scrollY < tabletScroll[0]) {
           setIsHomeSelect(true);
           setIsProfilSelect(false);
@@ -89,7 +89,7 @@ const App = () => {
           setIsHomeSelect(false);
           setIsContactSelect(false);
         }
-        if (window.scrollY > tabletScroll[3]) {
+        if (window.scrollY >= tabletScroll[3]) {
           setIsContactSelect(true);
           setIsProjectSelect(false);
           setIsSkillsSelect(false);
@@ -134,7 +134,7 @@ const App = () => {
           setIsHomeSelect(false);
           setIsContactSelect(false);
         }
-        if (window.scrollY > desktopScroll[3]) {
+        if (window.scrollY >= desktopScroll[3]) {
           setIsContactSelect(true);
           setIsProjectSelect(false);
           setIsSkillsSelect(false);
