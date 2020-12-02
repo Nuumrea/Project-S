@@ -28,7 +28,7 @@ const App = () => {
   const [isNav, setIsNav] = useState(false);
 
   const tabletScroll = [675, 1330, 2030, 2710];
-  const desktopScroll = [970, 1940, 2910, 3870];
+  const desktopScroll = [1000, 1900, 2800, 3790];
 
   useEffect(() => {
     const fetchSizeScreen = () => {
