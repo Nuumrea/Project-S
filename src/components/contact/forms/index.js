@@ -138,7 +138,7 @@ const Contact = ({ isContentContact }) => {
         <textarea
           name="textarea"
           type="text"
-          placeholder="message"
+          placeholder="Message"
           value={handleFeedback}
           onChange={handleFeedbackChange}
           ref={register({

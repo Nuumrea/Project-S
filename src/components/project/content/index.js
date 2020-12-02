@@ -28,7 +28,7 @@ const Content = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2054 && window.scrollY < 3064) {
+      if (window.scrollY >= 2030 && window.scrollY < 2710) {
         setIsTitleProject(true);
       }
     };
@@ -90,7 +90,7 @@ const Content = () => {
           className="project-title fs-title"
         >
           <div>
-            <span>Project</span>
+            <span>Projets</span>
           </div>
         </div>
         {displayModalKaba ? <Modal data={modalDataKaba} /> : null}

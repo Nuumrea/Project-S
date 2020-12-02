@@ -12,7 +12,7 @@ const Contact = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 2796) {
+      if (window.scrollY >= 2710) {
         setIsTitleContact(true);
         setIsContentContact(true);
       }
@@ -33,10 +33,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-question fs-subtitle">
-          <span id={isTitleContact ? "contact1" : "contact1-false"}>
-            Une question
+          <span id={isTitleContact ? "contact1" : "contact1-false"}>Une</span>
+          <span id={isTitleContact ? "contact2" : "contact2-false"}>
+            {" "}
+            question ?
           </span>
-          <span id={isTitleContact ? "contact2" : "contact2-false"}> ou</span>
           <span id={isTitleContact ? "contact3" : "contact3-false"}>
             {" "}
             envie de

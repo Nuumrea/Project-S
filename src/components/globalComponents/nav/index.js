@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 // Components
 import SocialMedia from "../socialMedia/index";
@@ -28,63 +28,9 @@ const NavBar = ({
   setIsProjectSelect,
   isContactSelect,
   setIsContactSelect,
+  isNav,
+  setIsNav,
 }) => {
-  const [isNav, setIsNav] = useState(false);
-
-  useEffect(() => {
-    const onScrollMenu = () => {
-      if (window.innerWidth >= 768) {
-        if (window.scrollY < 676) {
-          setIsHomeSelect(true);
-          setIsProfilSelect(false);
-          setIsSkillsSelect(false);
-          setIsProjectSelect(false);
-          setIsContactSelect(false);
-        }
-        if (window.scrollY >= 676 && window.scrollY < 1365) {
-          setIsProfilSelect(true);
-          setIsHomeSelect(false);
-          setIsSkillsSelect(false);
-          setIsProjectSelect(false);
-          setIsContactSelect(false);
-          setIsNav(true);
-        }
-        if (window.scrollY >= 1365 && window.scrollY < 2054) {
-          setIsSkillsSelect(true);
-          setIsProfilSelect(false);
-          setIsHomeSelect(false);
-          setIsProjectSelect(false);
-          setIsContactSelect(false);
-        }
-        if (window.scrollY >= 2054 && window.scrollY < 2796) {
-          setIsProjectSelect(true);
-          setIsSkillsSelect(false);
-          setIsProfilSelect(false);
-          setIsHomeSelect(false);
-          setIsContactSelect(false);
-        }
-        if (window.scrollY >= 2796) {
-          setIsContactSelect(true);
-          setIsProjectSelect(false);
-          setIsSkillsSelect(false);
-          setIsProfilSelect(false);
-          setIsHomeSelect(false);
-        }
-      }
-    };
-    onScrollMenu();
-    window.addEventListener("scroll", onScrollMenu);
-  }, [
-    setIsHomeSelect,
-    setIsProfilSelect,
-    setIsSkillsSelect,
-    setIsProjectSelect,
-    setIsContactSelect,
-    setIsNav,
-  ]);
-
-  // 3784
-
   const socialMediaData = [
     {
       icon: Linkedin,

@@ -22,42 +22,54 @@ const MenuMobil = ({
   isContactSelect,
   setIsContactSelect,
 }) => {
+  const mobilScroll = [630, 1295, 1925, 2705];
   useEffect(() => {
     const onScrollMenuMobil = () => {
-      if (window.scrollY < 676) {
-        setIsHomeSelect(true);
-        setIsProfilSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 676 && window.scrollY < 1365) {
-        setIsProfilSelect(true);
-        setIsHomeSelect(false);
-        setIsSkillsSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 1365 && window.scrollY < 1977) {
-        setIsSkillsSelect(true);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsProjectSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 1977 && window.scrollY < 2743) {
-        setIsProjectSelect(true);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
-        setIsContactSelect(false);
-      }
-      if (window.scrollY >= 2743) {
-        setIsContactSelect(true);
-        setIsProjectSelect(false);
-        setIsSkillsSelect(false);
-        setIsProfilSelect(false);
-        setIsHomeSelect(false);
+      if (window.innerWidth < 768) {
+        if (window.scrollY < mobilScroll[0]) {
+          setIsHomeSelect(true);
+          setIsProfilSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= mobilScroll[0] &&
+          window.scrollY < mobilScroll[1]
+        ) {
+          setIsProfilSelect(true);
+          setIsHomeSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= mobilScroll[1] &&
+          window.scrollY < mobilScroll[2]
+        ) {
+          setIsSkillsSelect(true);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= mobilScroll[2] &&
+          window.scrollY < mobilScroll[3]
+        ) {
+          setIsProjectSelect(true);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY > mobilScroll[3]) {
+          setIsContactSelect(true);
+          setIsProjectSelect(false);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+        }
       }
     };
     onScrollMenuMobil();
@@ -68,6 +80,7 @@ const MenuMobil = ({
     setIsSkillsSelect,
     setIsProjectSelect,
     setIsContactSelect,
+    mobilScroll,
   ]);
 
   return (

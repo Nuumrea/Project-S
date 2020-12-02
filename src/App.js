@@ -25,6 +25,10 @@ const App = () => {
   const [isSkillsSelect, setIsSkillsSelect] = useState(false);
   const [isProjectSelect, setIsProjectSelect] = useState(false);
   const [isContactSelect, setIsContactSelect] = useState(false);
+  const [isNav, setIsNav] = useState(false);
+
+  const tabletScroll = [675, 1330, 2030, 2710];
+  const desktopScroll = [970, 1940, 2910, 3870];
 
   useEffect(() => {
     const fetchSizeScreen = () => {
@@ -35,6 +39,128 @@ const App = () => {
     fetchSizeScreen();
   }, [isSizeScreen, setIsSizeScreen]);
 
+  useEffect(() => {
+    const handleTabNav = () => {
+      if (window.scrollY >= tabletScroll[0]) {
+        setIsNav(true);
+      }
+    };
+    handleTabNav();
+    window.addEventListener("scroll", handleTabNav);
+  }, [tabletScroll, setIsNav]);
+
+  useEffect(() => {
+    const onScrollMenu = () => {
+      if (window.innerWidth >= 768 && window.innerWidth < 1940) {
+        if (window.scrollY < tabletScroll[0]) {
+          setIsHomeSelect(true);
+          setIsProfilSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= tabletScroll[0] &&
+          window.scrollY < tabletScroll[1]
+        ) {
+          setIsProfilSelect(true);
+          setIsHomeSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= tabletScroll[1] &&
+          window.scrollY < tabletScroll[2]
+        ) {
+          setIsSkillsSelect(true);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= tabletScroll[2] &&
+          window.scrollY < tabletScroll[3]
+        ) {
+          setIsProjectSelect(true);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY > tabletScroll[3]) {
+          setIsContactSelect(true);
+          setIsProjectSelect(false);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+        }
+      } else if (window.innerWidth >= 1940) {
+        if (window.scrollY < desktopScroll[0]) {
+          setIsHomeSelect(true);
+          setIsProfilSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= desktopScroll[0] &&
+          window.scrollY < desktopScroll[1]
+        ) {
+          setIsProfilSelect(true);
+          setIsHomeSelect(false);
+          setIsSkillsSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= desktopScroll[1] &&
+          window.scrollY < desktopScroll[2]
+        ) {
+          setIsSkillsSelect(true);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsProjectSelect(false);
+          setIsContactSelect(false);
+        }
+        if (
+          window.scrollY >= desktopScroll[2] &&
+          window.scrollY < desktopScroll[3]
+        ) {
+          setIsProjectSelect(true);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+          setIsContactSelect(false);
+        }
+        if (window.scrollY > desktopScroll[3]) {
+          setIsContactSelect(true);
+          setIsProjectSelect(false);
+          setIsSkillsSelect(false);
+          setIsProfilSelect(false);
+          setIsHomeSelect(false);
+        }
+      }
+    };
+    onScrollMenu();
+    window.addEventListener("scroll", onScrollMenu);
+  }, [
+    setIsHomeSelect,
+    setIsProfilSelect,
+    setIsSkillsSelect,
+    setIsProjectSelect,
+    setIsContactSelect,
+    tabletScroll,
+    desktopScroll,
+  ]);
+
+  const test = () => {
+    console.log("test", window.scrollY);
+  };
+  window.addEventListener("scroll", test);
+
+  test();
   return (
     <>
       {isSizeScreen ? (
@@ -49,6 +175,8 @@ const App = () => {
           setIsProjectSelect={setIsProjectSelect}
           isContactSelect={isContactSelect}
           setIsContactSelect={setIsContactSelect}
+          isNav={isNav}
+          setIsNav={setIsNav}
         />
       ) : (
         <>

@@ -14,7 +14,7 @@ const Skills = ({ data }) => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 1365 && window.scrollY < 2054) {
+      if (window.scrollY >= 1330 && window.scrollY < 2030) {
         setIsTitleSkills(true);
       }
     };

@@ -13,7 +13,7 @@ const ProfilContent = () => {
 
   useEffect(() => {
     const onScrollMenu = () => {
-      if (window.scrollY >= 676 && window.scrollY < 1365) {
+      if (window.scrollY >= 675 && window.scrollY < 1330) {
         setIsTitleProfil(true);
       }
     };
